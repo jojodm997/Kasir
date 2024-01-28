@@ -44,5 +44,4 @@ Running the Application
 Support the Project
 
 If you find this project helpful, consider supporting the developer by buying a coffee:
-
-Buy Me A Coffee
+https://www.buymeacoffee.com/fauzandwimp
