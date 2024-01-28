@@ -4,7 +4,7 @@ This Cashier application built with CodeIgniter 4 is a project designed for the 
 
     Customer
     Cashier
-    Adminn
+    Admin
 
 ## Description
 
