@@ -1,4 +1,4 @@
-Cashier Application for Final Project (UKK)
+#Cashier Application for Final Project (UKK)
 Introduction
 
 This Cashier application built with CodeIgniter 4 is a project designed for the Final Project (UKK). The actors in this application consist of three roles:
