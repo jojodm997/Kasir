@@ -1,52 +1,48 @@
-# Aplikasi Kasir Untuk UKK
+Cashier Application for Final Project (UKK)
+Introduction
 
- Introduction
- Cashier with codeigniter4 ini merupakan proyek untuk UKK Aktor dari aplikasi ini terdiri dari 2    yaitu :
+This Cashier application built with CodeIgniter 4 is a project designed for the Final Project (UKK). The actors in this application consist of three roles:
 
-    Pembeli
-    Kasir
+    Customer
+    Cashier
     Admin
 
-Pembeli bisa membeli barang tanpa harus membuat akun, administrator hanya bertugas mengelola data, fasilitas. Sedangkan kasir bertugas mengelola keuangan untuk melakukan cek in dan cek out.
-
+Customers can make purchases without creating an account, while administrators are responsible for managing data and facilities. Cashiers, on the other hand, handle financial management for check-ins and check-outs.
 Requirements
 
-Untuk menjalankan aplikasi ini aplikasi yang dibutuhkan
+To run this application, the following prerequisites are necessary:
 
-    PHP version 7.4 or newer is required, with the following PHP extensions are enabled: int, mbstring, json.
+    PHP version 7.4 or newer is required, with the following PHP extensions enabled: intl, mbstring, json.
     MySQL
     Composer
-    Git bash (optional untuk proses download)
+    Git Bash (optional for the download process)
 
-Instalation
+Installation
 
-Download zip file, atau
+You can either download the zip file or clone the repository (requires Git installed on your PC) by following these steps:
 
-Clone dari repostory (membutuhkan Git yang terinstall di PC anda), dengan cara
+    Open the terminal or command line.
+    Run the following command:
 
-    jalankan terminal atau command line
-    jalankan perintah berikut :
-    
-    git clone https://github.com/jojodm997/Kasir
+bash
 
-    Maka akan terdownload folder 'Kasir'
-    Buat database dengan nama kasir
-    Import file database dengan phpmyadmin atau MySQL client tool lainnya
-    Lakukan perubahan seting database di file env
-    rename file env menjadi .env (diawali tanda titik)
+git clone https://github.com/jojodm997/Kasir
 
-Jalankan aplikasi
+    This will download the 'Kasir' folder.
+    Create a database named 'kasir'.
+    Import the database file using phpMyAdmin or any other MySQL client tool.
+    Update the database settings in the env file.
+    Rename the env file to .env (starting with a dot).
 
-    Jalankan VSCode
+Running the Application
 
-    Buka folder Kasir 
+    Open VSCode.
+    Navigate to the 'Kasir' folder.
+    In the terminal, go to the 'Downloads/Kasir' directory and type php spark serve (press Enter).
+    Open a web browser and go to http://localhost:8080 (or the port specified in the terminal).
 
-    Pada terminal, cd Downloads/Kasir lalu type php spark serve (tekan enter)
+Support the Project
 
-    Jalankan browser, arahkan url ke http://localhost:8080 (atau port yang tertera di terminal)
+If you find this project helpful, consider supporting the developer by buying a coffee:
 
-Buy Me A Coffe
-    https://www.buymeacoffee.com/fauzandwimp
-
-
- 
+Buy Me A Coffee
