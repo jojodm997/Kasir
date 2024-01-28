@@ -45,3 +45,5 @@ Support the Project
 
 If you find this project helpful, consider supporting the developer by buying a coffee:
 https://www.buymeacoffee.com/fauzandwimp
+
+I dont know how to use readme.md
