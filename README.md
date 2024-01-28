@@ -56,4 +56,7 @@ ex. [@Fauzan3E5](https://twitter.com/Fauzan3E5)
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55be6ffaa217e2a64119deace9ac816f546b1490
