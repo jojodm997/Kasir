@@ -31,7 +31,7 @@
 #--------------------------------------------------------------------
 
  database.default.hostname = localhost
- database.default.database = ci4
+ database.default.database = Kasir
  database.default.username = root
  database.default.password = 
  database.default.DBDriver = MySQLi
