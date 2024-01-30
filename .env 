@@ -30,7 +30,7 @@
 # DATABASE
 #--------------------------------------------------------------------
 
- database.default.hostname = localhost
+ database.default.hostname = 127.0.0.1
  database.default.database = Kasir
  database.default.username = root
  database.default.password = 
