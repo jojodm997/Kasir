@@ -15,6 +15,7 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "laminas/laminas-escaper": "^2.9",
+        "myth/auth": "^1.2",
         "psr/log": "^1.1"
     },
     "require-dev": {
