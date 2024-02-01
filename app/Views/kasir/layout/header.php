@@ -337,7 +337,7 @@
                 class="breadcrumb-item text-sm text-dark active"
                 aria-current="page"
               >
-                Examplee
+                Example
               </li>
             </ol>
             <h6 class="font-weight-bold mb-0">Example</h6>
