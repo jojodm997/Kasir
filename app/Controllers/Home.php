@@ -23,4 +23,9 @@ class Home extends BaseController
         echo view('auth/pages/register');
         echo view('auth/layout/footer');
     }
+
+    public function user()
+    {
+        return view('user/index');
+    }
 }
