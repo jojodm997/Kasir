@@ -65,7 +65,7 @@
           href=" https://demos.creative-tim.com/corporate-ui-dashboard/pages/dashboard.html "
           target="_blank"
         >
-          <span class="font-weight-bold text-lg">Corporate UI</span>
+          <span class="font-weight-bold text-lg">APLIKASI KASIR</span>
         </a>
       </div>
       <div
@@ -200,19 +200,6 @@
       >
         <div class="container-fluid py-1 px-2">
           <nav aria-label="breadcrumb">
-            <ol
-              class="breadcrumb bg-transparent mb-1 pb-0 pt-1 px-0 me-sm-6 me-5"
-            >
-              <li class="breadcrumb-item text-sm">
-                <a class="opacity-5 text-dark" href="javascript:;">Dashboard</a>
-              </li>
-              <li
-                class="breadcrumb-item text-sm text-dark active"
-                aria-current="page"
-              >
-                Dashboard
-              </li>
-            </ol>
             <h6 class="font-weight-bold mb-0">Dashboard</h6>
           </nav>
             <ul class="navbar-nav justify-content-end">

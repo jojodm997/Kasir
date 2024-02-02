@@ -1,0 +1,20 @@
+CRITICAL - 2024-02-02 03:04:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/pages/register.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(33): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->user()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-02 03:05:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/pages/register.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(33): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->user()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
