@@ -24,10 +24,10 @@ class Home extends BaseController
         echo view('auth/layout/footer');
     }
 
-    public function user()
+    public function dashboard()
     {
         $data = [
-            'title' => 'Dashboard | Kasir'
+            'title' => 'Dashboard'
         ];
         echo view('user/layout/header', $data);
         echo view('user/pages/index');
