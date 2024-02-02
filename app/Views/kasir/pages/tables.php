@@ -295,14 +295,7 @@
                   <p class="text-sm mb-sm-0">These are details about the last transactions</p>
                 </div>
                 <div class="ms-auto d-flex">
-                  <div class="input-group input-group-sm ms-auto me-2">
-                    <span class="input-group-text text-body">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
-                      </svg>
-                    </span>
-                    <input type="text" class="form-control form-control-sm" placeholder="Search">
-                  </div>
+                
                   <button type="button" class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0 me-2">
                     <span class="btn-inner--icon">
                       <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="d-block me-2">
