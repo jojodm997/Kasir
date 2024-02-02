@@ -26,6 +26,11 @@ class Home extends BaseController
 
     public function user()
     {
-        return view('user/index');
+        $data = [
+            'title' => 'Dashboard | Kasir'
+        ];
+        echo view('user/layout/header', $data);
+        echo view('user/pages/index');
+        echo view('user/layout/footer');
     }
 }
