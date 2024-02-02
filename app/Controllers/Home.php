@@ -33,4 +33,22 @@ class Home extends BaseController
         echo view('user/pages/index');
         echo view('user/layout/footer');
     }
+
+     public function tables()
+    {
+        $data = [
+            'title' => 'Dashboard | tables'
+        ];
+        echo view('user/layout/header', $data);
+        echo view('user/pages/tables');
+        echo view('user/layout/footer');
+    }
+
+    public function wallet(): string
+    {
+        $data = [
+            'title' => 'Dashboard | wallet'
+        ];
+        return view ('user/pages/wallet', $data);
+    }
 }

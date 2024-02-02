@@ -123,7 +123,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('/Kasir/tables');?>">
+            <a class="nav-link" href="<?= base_url('/Home/tables');?>">
               <div
                 class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center"
               >
@@ -178,7 +178,7 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('/Kasir/wallet');?>">
+            <a class="nav-link" href="<?= base_url('/Home/wallet');?>">
               <div
                 class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center"
               >
