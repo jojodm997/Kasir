@@ -1,7 +1,7 @@
-<?= $this->extend('user/layout/template'); ?>
+      <?= $this->extend('templates/index'); ?>
 
-<?=  $this->section('content'); ?>
-
+      <?= $this->section('page-content'); ?>
+      
       <div class="container-fluid py-4 px-5">
         <div class="row">
           <div class="col-md-12">
@@ -62,7 +62,7 @@
                     >
                       <div
                         class="full-background bg-cover"
-                        style="background-image: url('../assets/img/img-2.jpg')"
+                        style="background-image: url('<?= base_url() ?>/Corporate/assets/img/img-2.jpg')"
                       ></div>
                       <div class="card-body text-start px-3 py-0 w-100">
                         <div class="row mt-12">
@@ -98,7 +98,7 @@
                   >
                     <div
                       class="full-background bg-cover"
-                      style="background-image: url('../assets/img/img-1.jpg')"
+                      style="background-image: url('<?= base_url() ?>/Corporate/assets/img/img-1.jpg')"
                     ></div>
                     <div class="card-body text-start px-3 py-0 w-100">
                       <div class="row mt-12">
@@ -129,7 +129,7 @@
                   >
                     <div
                       class="full-background bg-cover"
-                      style="background-image: url('../assets/img/img-3.jpg')"
+                      style="background-image: url('<?= base_url() ?>/Corporate/assets/img/img-3.jpg')"
                     ></div>
                     <div class="card-body text-start px-3 py-0 w-100">
                       <div class="row mt-12">
@@ -162,7 +162,7 @@
                   >
                     <div
                       class="full-background bg-cover"
-                      style="background-image: url('../assets/img/img-4.jpg')"
+                      style="background-image: url('<?= base_url() ?>/Corporate/assets/img/img-4.jpg')"
                     ></div>
                     <div class="card-body text-start px-3 py-0 w-100">
                       <div class="row mt-12">
@@ -193,7 +193,7 @@
                   >
                     <div
                       class="full-background bg-cover"
-                      style="background-image: url('../assets/img/img-5.jpg')"
+                      style="background-image: url('<?= base_url() ?>/Corporate/assets/img/img-5.jpg')"
                     ></div>
                     <div class="card-body text-start px-3 py-0 w-100">
                       <div class="row mt-12">
@@ -224,7 +224,7 @@
                   >
                     <div
                       class="full-background bg-cover"
-                      style="background-image: url('../assets/img/img-1.jpg')"
+                      style="background-image: url('<?= base_url() ?>/Corporate/assets/img/img-1.jpg')"
                     ></div>
                     <div class="card-body text-start px-3 py-0 w-100">
                       <div class="row mt-12">
@@ -462,7 +462,7 @@
                               class="avatar avatar-sm rounded-circle bg-gray-100 me-2 my-2"
                             >
                               <img
-                                src="../assets/img/small-logos/logo-spotify.svg"
+                                src="<?= base_url() ?>/Corporate/assets/img/small-logos/logo-spotify.svg"
                                 class="w-80"
                                 alt="spotify"
                               />
@@ -486,7 +486,7 @@
                               class="border px-1 py-1 text-center d-flex align-items-center border-radius-sm my-auto"
                             >
                               <img
-                                src="../assets/img/logos/visa.png"
+                                src="<?= base_url() ?>/Corporate/assets/img/logos/visa.png"
                                 class="w-90 mx-auto"
                                 alt="visa"
                               />
@@ -528,7 +528,7 @@
                               class="avatar avatar-sm rounded-circle bg-gray-100 me-2 my-2"
                             >
                               <img
-                                src="../assets/img/small-logos/logo-invision.svg"
+                                src="<?= base_url() ?>/Corporate/assets/img/small-logos/logo-invision.svg"
                                 class="w-80"
                                 alt="invision"
                               />
@@ -552,7 +552,7 @@
                               class="border px-1 py-1 text-center d-flex align-items-center border-radius-sm my-auto"
                             >
                               <img
-                                src="../assets/img/logos/mastercard.png"
+                                src="<?= base_url() ?>/Corporate/assets/img/logos/mastercard.png"
                                 class="w-90 mx-auto"
                                 alt="mastercard"
                               />
@@ -596,7 +596,7 @@
                               class="avatar avatar-sm rounded-circle bg-gray-100 me-2 my-2"
                             >
                               <img
-                                src="../assets/img/small-logos/logo-jira.svg"
+                                src="<?= base_url() ?>/Corporate/assets/img/small-logos/logo-jira.svg"
                                 class="w-80"
                                 alt="jira"
                               />
@@ -620,7 +620,7 @@
                               class="border px-1 py-1 text-center d-flex align-items-center border-radius-sm my-auto"
                             >
                               <img
-                                src="../assets/img/logos/mastercard.png"
+                                src="<?= base_url() ?>/Corporate/assets/img/logos/mastercard.png"
                                 class="w-90 mx-auto"
                                 alt="mastercard"
                               />
@@ -664,7 +664,7 @@
                               class="avatar avatar-sm rounded-circle bg-gray-100 me-2 my-2"
                             >
                               <img
-                                src="../assets/img/small-logos/logo-slack.svg"
+                                src="<?= base_url() ?>/Corporate/assets/img/small-logos/logo-slack.svg"
                                 class="w-80"
                                 alt="slack"
                               />
@@ -688,7 +688,7 @@
                               class="border px-1 py-1 text-center d-flex align-items-center border-radius-sm my-auto"
                             >
                               <img
-                                src="../assets/img/logos/visa.png"
+                                src="<?= base_url() ?>/Corporate/assets/img/logos/visa.png"
                                 class="w-90 mx-auto"
                                 alt="visa"
                               />
@@ -943,5 +943,67 @@
             </div>
           </div>
         </div>
+        <footer class="footer pt-3">
+          <div class="container-fluid">
+            <div class="row align-items-center justify-content-lg-between">
+              <div class="col-lg-6 mb-lg-0 mb-4">
+                <div
+                  class="copyright text-center text-xs text-muted text-lg-start"
+                >
+                  Copyright ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Corporate UI by
+                  <a
+                    href="https://www.creative-tim.com"
+                    class="text-secondary"
+                    target="_blank"
+                    >Creative Tim</a
+                  >.
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <ul
+                  class="nav nav-footer justify-content-center justify-content-lg-end"
+                >
+                  <li class="nav-item">
+                    <a
+                      href="https://www.creative-tim.com"
+                      class="nav-link text-xs text-muted"
+                      target="_blank"
+                      >Creative Tim</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://www.creative-tim.com/presentation"
+                      class="nav-link text-xs text-muted"
+                      target="_blank"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://www.creative-tim.com/blog"
+                      class="nav-link text-xs text-muted"
+                      target="_blank"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://www.creative-tim.com/license"
+                      class="nav-link text-xs pe-0 text-muted"
+                      target="_blank"
+                      >License</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
 
-        <?= $this->endSection(); ?>
+      <?= $this->endSection() ?>

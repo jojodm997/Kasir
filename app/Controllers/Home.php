@@ -9,7 +9,7 @@ class Home extends BaseController
         $data = [
             'title' => 'Login'
         ];
-        echo view('auth/pages/login', $data);
+        echo view('auth/login', $data);
     }
 
     public function register()
@@ -17,7 +17,12 @@ class Home extends BaseController
         $data = [
             'title' => 'Register'
         ];
-         return view('auth/pages/register', $data);
+         return view('auth/register', $data);
+    }
+
+    public function user()
+    {
+        return view('user/index');
     }
 
     public function dashboard()
