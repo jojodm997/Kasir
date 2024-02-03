@@ -113,9 +113,10 @@
                       <div class="mb-3">
                         <input
                           type="text"
-                          class="form-control <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>"
+                          class="form-control <?php if (session('errors.username')) : ?>is-invalid<?php endif ?>"
                           name="username"
-                          placeholder="Enter your name"
+                          placeholder="<?=lang('Auth.username')?>"
+                          value="<?= old('username') ?>"
                           aria-label="Name"
                           aria-describedby="name-addon"
                         />
@@ -125,7 +126,7 @@
                          <small id="emailHelp" class="form-text text-muted"><?=lang('Auth.weNeverShare')?></small>
                         <input
                           type="email"
-                          class="form-control"
+                          class="form-control <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>"
                           name="email"
                           placeholder="<?=lang('Auth.email')?>"
                           value="<?= old('email') ?>"
@@ -136,9 +137,22 @@
                       <label>Password</label>
                       <div class="mb-3">
                         <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Create a password"
+                          type="password"
+                          class="form-control <?php if (session('errors.username')) : ?>is-invalid<?php endif ?>"
+                          name="password"
+                          placeholder="<?=lang('Auth.password')?>"
+                          autocomplete="off"
+                          aria-label="Password"
+                          aria-describedby="password-addon"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <input
+                          type="password"
+                          class="form-control <?php if (session('errors.pass_confirm')) : ?>is-invalid<?php endif ?>"
+                          name="pass-confirm"
+                          placeholder="<?=lang('Auth.repeatPassword')?>"
+                          autocomplete="off"
                           aria-label="Password"
                           aria-describedby="password-addon"
                         />
@@ -164,19 +178,18 @@
                       </div>
                       <div class="text-center">
                         <button
-                          type="button"
+                          type="submit"
                           class="btn btn-dark w-100 mt-4 mb-3"
                         >
-                          Sign up
+                          <?=lang('Auth.register')?>
                         </button>
                       </div>
                     </form>
                   </div>
                   <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                    <p class="mb-4 text-xs mx-auto">
-                      Already have an account?
-                      <a href="javascript:;" class="text-dark font-weight-bold"
-                        >Sign in</a
+                    <p class="mb-4 text-xs mx-auto"> <?=lang('Auth.alreadyRegistered')?>
+                      <a href="<?= url_to('login') ?>" class="text-dark font-weight-bold"
+                        ><?=lang('Auth.signIn')?></a
                       >
                     </p>
                   </div>
