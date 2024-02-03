@@ -224,3 +224,70 @@ in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-03 11:46:57 --> ParseError: syntax error, unexpected token "::", expecting "," or ";"
+in APPPATH/Config/Filters.php on line 11.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(280): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance()
+ 7 SYSTEMPATH/Common.php(215): CodeIgniter\Config\Factories::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(291): config()
+ 9 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::filters()
+10 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+11 SYSTEMPATH/Config/Services.php(288): CodeIgniter\Config\BaseService::getSharedInstance()
+12 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::filters()
+13 SYSTEMPATH/CodeIgniter.php(456): CodeIgniter\Config\BaseService::__callStatic()
+14 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-03 11:47:51 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 577.
+ 1 SYSTEMPATH/Filters/Filters.php(577): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(261): CodeIgniter\Filters\Filters->processAliasesToClass()
+ 3 SYSTEMPATH/Filters/Filters.php(172): CodeIgniter\Filters\Filters->initialize()
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-03 11:49:49 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 577.
+ 1 SYSTEMPATH/Filters/Filters.php(577): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(261): CodeIgniter\Filters\Filters->processAliasesToClass()
+ 3 SYSTEMPATH/Filters/Filters.php(172): CodeIgniter\Filters\Filters->initialize()
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-03 11:49:50 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 577.
+ 1 SYSTEMPATH/Filters/Filters.php(577): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(261): CodeIgniter\Filters\Filters->processAliasesToClass()
+ 3 SYSTEMPATH/Filters/Filters.php(172): CodeIgniter\Filters\Filters->initialize()
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-03 11:51:47 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 577.
+ 1 SYSTEMPATH/Filters/Filters.php(577): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(261): CodeIgniter\Filters\Filters->processAliasesToClass()
+ 3 SYSTEMPATH/Filters/Filters.php(172): CodeIgniter\Filters\Filters->initialize()
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-03 11:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-03 11:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-03 11:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-03 11:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-03 11:52:48 --> Error: Class "Config\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 175.
+ 1 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-03 11:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-03 11:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-03 11:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
