@@ -7,21 +7,17 @@ class Home extends BaseController
    public function index()
     {
         $data = [
-            'title' => 'Dashboard | Kasir'
+            'title' => 'Login'
         ];
-        echo view('auth/layout/header', $data);
-        echo view('auth/pages/login');
-        echo view('auth/layout/footer');
+        echo view('auth/pages/login', $data);
     }
 
     public function register()
     {
         $data = [
-            'title' => 'Dashboard | Kasir'
+            'title' => 'Register'
         ];
-        echo view('auth/layout/header', $data);
-        echo view('auth/pages/register');
-        echo view('auth/layout/footer');
+         return view('auth/pages/register', $data);
     }
 
     public function dashboard()
@@ -29,9 +25,7 @@ class Home extends BaseController
         $data = [
             'title' => 'Dashboard'
         ];
-        echo view('user/layout/header', $data);
-        echo view('user/pages/index');
-        echo view('user/layout/footer');
+        return view('user/pages/index', $data);
     }
 
      public function tables()
@@ -39,9 +33,7 @@ class Home extends BaseController
         $data = [
             'title' => 'Dashboard | tables'
         ];
-        echo view('user/layout/header', $data);
-        echo view('user/pages/tables');
-        echo view('user/layout/footer');
+        return view('user/pages/tables', $data);
     }
 
     public function wallet(): string

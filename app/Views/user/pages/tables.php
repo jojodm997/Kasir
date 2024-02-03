@@ -12,6 +12,9 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
+<?= $this->extend('user/layout/template'); ?>
+
+<?=  $this->section('content'); ?>
 
     <div class="container-fluid py-4 px-5">
       <div class="row">
@@ -609,4 +612,4 @@
           </div>
         </div>
       </div>
-      
+              <?= $this->endSection(); ?>

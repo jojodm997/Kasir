@@ -1,4 +1,8 @@
-        </div>
+       <?= $this->extend('auth/layout/template'); ?>
+
+      <?=  $this->section('content'); ?>
+       
+       </div>
       </div>
     </div>
     <main class="main-content mt-0">
@@ -116,3 +120,5 @@
         </div>
       </section>
     </main>
+
+    <?= $this->endSection(); ?>
