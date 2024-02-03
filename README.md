@@ -37,9 +37,16 @@ Requirements
 - In the terminal, go to the 'Downloads/Kasir' directory and type php spark serve (press Enter).
 - Open a web browser and go to http://localhost:8080 (or the port specified in the terminal).
 
+### WARNING
+
+- If you use windows 10 or windows 11 you need to configure the php program
+- Go to your project directory
+- type this command
+
 ```
-code blocks for commands
+c:xampp:php:php php spark serve
 ```
+- Or you install globally https://www.sitepoint.com/how-to-install-php-on-windows/
 
 ## Authors
 
