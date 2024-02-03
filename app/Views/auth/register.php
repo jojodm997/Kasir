@@ -100,19 +100,21 @@
                 <div class="card card-plain mt-8">
                   <div class="card-header pb-0 text-left bg-transparent">
                     <h3 class="font-weight-black text-dark display-6">
-                      Sign up
+                      <?=lang('Auth.register')?>
                     </h3>
                     <p class="mb-0">
-                      Nice to meet you! Please enter your details.
+                       <?= view('Myth\Auth\Views\_message_block') ?>
                     </p>
                   </div>
                   <div class="card-body">
-                    <form role="form">
+                     <form action="<?= url_to('register') ?>" method="post" class="user">
+                        <?= csrf_field() ?>
                       <label>Name</label>
                       <div class="mb-3">
                         <input
                           type="text"
-                          class="form-control"
+                          class="form-control <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>"
+                          name="username"
                           placeholder="Enter your name"
                           aria-label="Name"
                           aria-describedby="name-addon"
@@ -120,10 +122,13 @@
                       </div>
                       <label>Email Address</label>
                       <div class="mb-3">
+                         <small id="emailHelp" class="form-text text-muted"><?=lang('Auth.weNeverShare')?></small>
                         <input
                           type="email"
                           class="form-control"
-                          placeholder="Enter your email address"
+                          name="email"
+                          placeholder="<?=lang('Auth.email')?>"
+                          value="<?= old('email') ?>"
                           aria-label="Email"
                           aria-describedby="email-addon"
                         />
