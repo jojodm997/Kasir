@@ -1,0 +1,158 @@
+INFO - 2024-02-04 03:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 03:21:26 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH/Views/auth/login.php on line 139.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 VENDORPATH/myth/auth/src/Controllers/AuthController.php(412): view()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(58): Myth\Auth\Controllers\AuthController->_render()
+ 5 SYSTEMPATH/CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-04 03:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 03:21:41 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH/Views/auth/login.php on line 140.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 VENDORPATH/myth/auth/src/Controllers/AuthController.php(412): view()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(58): Myth\Auth\Controllers\AuthController->_render()
+ 5 SYSTEMPATH/CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-04 03:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 03:22:19 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH/Views/auth/login.php on line 139.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 VENDORPATH/myth/auth/src/Controllers/AuthController.php(412): view()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(58): Myth\Auth\Controllers\AuthController->_render()
+ 5 SYSTEMPATH/CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-04 03:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 03:23:39 --> ParseError: syntax error, unexpected end of file
+in APPPATH/Views/auth/login.php on line 140.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 VENDORPATH/myth/auth/src/Controllers/AuthController.php(412): view()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(58): Myth\Auth\Controllers\AuthController->_render()
+ 5 SYSTEMPATH/CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-04 03:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 03:23:54 --> ParseError: syntax error, unexpected end of file
+in APPPATH/Views/auth/login.php on line 140.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 VENDORPATH/myth/auth/src/Controllers/AuthController.php(412): view()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(58): Myth\Auth\Controllers\AuthController->_render()
+ 5 SYSTEMPATH/CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-04 03:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 03:45:58 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH/Views/auth/login.php on line 141.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 VENDORPATH/myth/auth/src/Controllers/AuthController.php(412): view()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(58): Myth\Auth\Controllers\AuthController->_render()
+ 5 SYSTEMPATH/CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-04 03:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 03:46:36 --> ParseError: syntax error, unexpected token "else", expecting end of file
+in APPPATH/Views/auth/login.php on line 43.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 VENDORPATH/myth/auth/src/Controllers/AuthController.php(412): view()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(58): Myth\Auth\Controllers\AuthController->_render()
+ 5 SYSTEMPATH/CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-04 03:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 03:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 04:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 04:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

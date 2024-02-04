@@ -14,79 +14,96 @@
                 <div class="card card-plain mt-8">
                   <div class="card-header pb-0 text-left bg-transparent">
                     <h3 class="font-weight-black text-dark display-6">
-                      Welcome back
+                      <?=lang('Auth.loginTitle')?>
                     </h3>
-                    <p class="mb-0">Welcome back! Please enter your details.</p>
+                    <p class="mb-0"> <?= view('Myth\Auth\Views\_message_block') ?></p>
                   </div>
                   <div class="card-body">
+                    <form action="<?= url_to('login') ?>" method="post">
+						<?= csrf_field() ?>
+
+
+            
                     <form role="form">
-                      <label>Name</label>
-                      <div class="mb-3">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Enter your name"
-                          aria-label="Name"
-                          aria-describedby="name-addon"
-                        />
-                      </div>
-                      <label>Email Address</label>
+                     <label for="login"><?=lang('Auth.email')?></label>
                       <div class="mb-3">
                         <input
                           type="email"
-                          class="form-control"
-                          placeholder="Enter your email address"
+                          class="form-control <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>"
+                          name="login"
+                          placeholder="<?=lang('Auth.email')?>"
                           aria-label="Email"
                           aria-describedby="email-addon"
                         />
+                        <div class="invalid-feedback">
+								            <?= session('errors.login') ?>
+							          </div>
                       </div>
-                      <label>Password</label>
+
+                      <label for="login"><?=lang('Auth.emailOrUsername')?></label>
                       <div class="mb-3">
                         <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Enter password"
+                          type="text"
+                          class="form-control <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>"
+                          name="login"
+                          placeholder="<?=lang('Auth.emailOrUsername')?>"
+                          aria-label="Name"
+                          aria-describedby="name-addon"
+                        />
+                        <div class="invalid-feedback">
+								            <?= session('errors.login') ?>
+							          </div>
+                      </div>
+                      
+                     <label for="password"><?=lang('Auth.password')?></label>
+                      <div class="mb-3">
+                        <input
+                          type="password"
+                          class="form-control <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>"
+                          name="password"
+                          placeholder="<?=lang('Auth.password')?>"
                           aria-label="Password"
                           aria-describedby="password-addon"
                         />
+                        <div class="invalid-feedback">
+								            <?= session('errors.password') ?>
+							          </div>
                       </div>
+
                       <div class="d-flex align-items-center">
                         <div class="form-check form-check-info text-left mb-0">
                           <input
-                            class="form-check-input"
+                            class="form-check-input  <?php if (old('remember')) : ?> checked <?php endif ?>"
                             type="checkbox"
-                            value=""
+                            name="remember"
                             id="flexCheckDefault"
                           />
                           <label
                             class="font-weight-normal text-dark mb-0"
                             for="flexCheckDefault"
                           >
-                            Remember for 14 days
+                            <?=lang('Auth.rememberMe')?>
                           </label>
                         </div>
                         <a
-                          href="javascript:;"
+                          href="<?= url_to('forgot') ?>"
                           class="text-xs font-weight-bold ms-auto"
-                          >Forgot password</a
+                          ><?=lang('Auth.forgotYourPassword')?></a
                         >
                       </div>
                       <div class="text-center">
                         <button
-                          type="button"
+                          type="submit"
                           class="btn btn-dark w-100 mt-4 mb-3"
                         >
-                          Sign in
+                         <?=lang('Auth.loginAction')?>
                         </button>
                       </div>
                     </form>
                   </div>
                   <div class="card-footer text-center pt-0 px-lg-2 px-1">
                     <p class="mb-4 text-xs mx-auto">
-                      Don't have an account?
-                      <a href="javascript:;" class="text-dark font-weight-bold"
-                        >Sign up</a
-                      >
+                      <a href="<?= url_to('register') ?>"><?=lang('Auth.needAnAccount')?></a>
                     </p>
                   </div>
                 </div>
