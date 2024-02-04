@@ -129,7 +129,7 @@
                 <ul class="navbar-nav d-lg-block d-none">
                   <li class="nav-item">
                     <a
-                      href="https://www.creative-tim.com/product/corporate-ui-dashboard"
+                      href="https://github.com/jojodm997/Kasir"
                       class="btn btn-sm mb-0 bg-gradient-dark"
                       >Github</a
                     >

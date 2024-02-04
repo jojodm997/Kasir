@@ -44,8 +44,9 @@ Requirements
 - type this command
 
 ```
-c:xampp:php:php php spark serve
+c:\xampp\php\php spark serve
 ```
+
 - Or you install globally https://www.sitepoint.com/how-to-install-php-on-windows/
 
 ## Authors
