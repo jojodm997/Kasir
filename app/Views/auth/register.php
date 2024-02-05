@@ -109,7 +109,7 @@
                   <div class="card-body">
                      <form action="<?= url_to('register') ?>" method="post" class="user">
                         <?= csrf_field() ?>
-                      <label>Name</label>
+                      <label for="username"><?=lang('Auth.username')?></label>
                       <div class="mb-3">
                         <input
                           type="text"
@@ -121,9 +121,9 @@
                           aria-describedby="name-addon"
                         />
                       </div>
-                      <label>Email Address</label>
+
+                      <label for="email"><?=lang('Auth.email')?></label>
                       <div class="mb-3">
-                         <small id="emailHelp" class="form-text text-muted"><?=lang('Auth.weNeverShare')?></small>
                         <input
                           type="email"
                           class="form-control <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>"
@@ -133,8 +133,10 @@
                           aria-label="Email"
                           aria-describedby="email-addon"
                         />
+                         <small id="emailHelp" class="form-text text-muted"><?=lang('Auth.weNeverShare')?></small>
                       </div>
-                      <label>Password</label>
+
+                      <label for="password"><?=lang('Auth.password')?></label>
                       <div class="mb-3">
                         <input
                           type="password"
@@ -146,11 +148,13 @@
                           aria-describedby="password-addon"
                         />
                       </div>
+
+                        <label for="pass_confirm"><?=lang('Auth.repeatPassword')?></label>
                       <div class="mb-3">
                         <input
                           type="password"
                           class="form-control <?php if (session('errors.pass_confirm')) : ?>is-invalid<?php endif ?>"
-                          name="pass-confirm"
+                          name="pass_confirm"
                           placeholder="<?=lang('Auth.repeatPassword')?>"
                           autocomplete="off"
                           aria-label="Password"
