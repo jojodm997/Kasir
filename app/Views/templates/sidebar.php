@@ -14,9 +14,10 @@
           href=" https://demos.creative-tim.com/corporate-ui-dashboard/pages/dashboard.html "
           target="_blank"
         >
-          <span class="font-weight-bold text-lg">Corporate UI</span>
+          <span class="font-weight-bold text-lg">E-Corp</span>
         </a>
       </div>
+      
       <div
         class="collapse navbar-collapse px-4 w-auto"
         id="sidenav-collapse-main"
@@ -125,8 +126,9 @@
               <span class="nav-link-text ms-1">Tables</span>
             </a>
           </li>
+          <?php if (in_groups('admin')) : ?>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/wallet.html">
+            <a class="nav-link" href="<?= base_url('../admin/musers/musers.php') ?>">
               <div
                 class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center"
               >
@@ -169,8 +171,9 @@
               <span class="nav-link-text ms-1">Wallet</span>
             </a>
           </li>
+          <?php endif; ?>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/rtl.html">
+            <a class="nav-link" href="<?= base_url('kasir') ?>">
               <div
                 class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center"
               >
@@ -240,25 +243,9 @@
           <li class="nav-item border-start my-0 pt-2">
             <a
               class="nav-link position-relative ms-0 ps-2 py-2"
-              href="../pages/profile.html"
+              href="<?= base_url('logout') ?>"
             >
-              <span class="nav-link-text ms-1">Profile</span>
-            </a>
-          </li>
-          <li class="nav-item border-start my-0 pt-2">
-            <a
-              class="nav-link position-relative ms-0 ps-2 py-2"
-              href="../pages/sign-in.html"
-            >
-              <span class="nav-link-text ms-1">Sign In</span>
-            </a>
-          </li>
-          <li class="nav-item border-start my-0 pt-2">
-            <a
-              class="nav-link position-relative ms-0 ps-2 py-2"
-              href="../pages/sign-up.html"
-            >
-              <span class="nav-link-text ms-1">Sign Up</span>
+              <span class="nav-link-text ms-1">Log out</span>
             </a>
           </li>
         </ul>
