@@ -72,6 +72,13 @@
               <span class="nav-link-text ms-1">Dashboard</span>
             </a>
           </li>
+             <li class="mt-3 nav-item">
+            <h6
+              class="p-3 pe-2 text-uppercase text-xs font-weight-bolder text-secondary"
+            >
+              MASTER DATA
+            </h6>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="../pages/tables.html">
               <div
@@ -172,6 +179,15 @@
             </a>
           </li>
           <?php endif; ?>
+          </li>
+             <li class="mt-3 nav-item">
+            <h6
+              class="p-3 pe-2 text-uppercase text-xs font-weight-bolder text-secondary"
+            >
+              TRANSAKSI
+            </h6>
+          </li>
+          
           <li class="nav-item mt-2">
             <div class="d-flex align-items-center nav-link">
               <svg
