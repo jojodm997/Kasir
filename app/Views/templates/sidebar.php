@@ -137,7 +137,7 @@
            <?php endif; ?>
           
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('../admin/musers/musers.php') ?>">
+            <a class="nav-link" href="<?= base_url('/Admin/muser') ?>">
               <div
                 class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center"
               >
@@ -191,7 +191,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('../admin/musers/musers.php') ?>">
+            <a class="nav-link" href="<?= base_url('/Admin/laporan') ?>">
               <div
                 class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center"
               >
