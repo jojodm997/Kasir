@@ -56,6 +56,8 @@ ex. [@Fauzan3E5](https://twitter.com/Fauzan3E5)
 
 ## Version History
 
+- 0.3
+  - Added detail all user
 - 0.2
   - Added a Login page
 - 0.1
