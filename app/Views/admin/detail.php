@@ -52,7 +52,7 @@
             </div>
             <div class="card-body p-3">
               <p class="text-sm mb-4">
-                Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
+                Hi, I’m <?= $user->username ?>, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
               </p>
               <ul class="list-group">
                 <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pt-0 pb-1 text-sm"><span class="text-secondary">Name:</span> &nbsp; <?= $user->username ?></li>
