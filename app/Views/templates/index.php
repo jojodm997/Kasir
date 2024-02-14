@@ -26,7 +26,9 @@
       href="<?= base_url() ?>/Corporate/assets/img/apple-icon.png"
     />
     <link rel="icon" type="image/png" href="<?= base_url() ?>/Corporate/assets/img/favicon.png" />
-    <title><?= $title; ?></title>
+    <title>Halo</title>
+    <script src="<?= base_url('js/node_modules/jquery/dist/jquery.min.js') ?>"></script>
+
     <!--     Fonts and icons     -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"

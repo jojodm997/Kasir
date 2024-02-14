@@ -137,7 +137,7 @@
            <?php endif; ?>
           
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('/Admin/muser') ?>">
+            <a class="nav-link" href="<?= base_url('/Kategori/index') ?>">
               <div
                 class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center"
               >
@@ -149,9 +149,9 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <title>wallet</title>
+                  <title>Kategori</title>
                   <g
-                    id="wallet"
+                    id="Kategori"
                     stroke="none"
                     stroke-width="1"
                     fill="none"
@@ -177,7 +177,7 @@
                   </g>
                 </svg>
               </div>
-              <span class="nav-link-text ms-1">Wallet</span>
+              <span class="nav-link-text ms-1">Kategori</span>
             </a>
           </li>
          

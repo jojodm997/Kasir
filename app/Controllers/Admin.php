@@ -31,7 +31,7 @@ class Admin extends BaseController
         return view('admin/muser', $data);
     }
 
-       public function detail($id = 0)
+    public function detail($id = 0)
     {
         $data ['title'] = 'Detail User';
 
