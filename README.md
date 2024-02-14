@@ -68,6 +68,8 @@ ex. [@Fauzan3E5](https://twitter.com/Fauzan3E5)
 
 ## Version History
 
+- 0.3.1
+  - Added Create and Delete for Kategori
 - 0.3
   - Added detail all user
 - 0.2
