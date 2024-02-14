@@ -86,7 +86,7 @@ return [
     'forgotYourPassword'        => 'Forgot your password?',
     'password'                  => 'Password',
     'repeatPassword'            => 'Repeat Password',
-    'emailOrUsername'           => 'Email or username',
+    'emailOrUsername'           => 'Username',
     'username'                  => 'Username',
     'register'                  => 'Register',
     'signIn'                    => 'Sign In',
