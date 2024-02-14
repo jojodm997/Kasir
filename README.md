@@ -37,6 +37,18 @@ Requirements
 - In the terminal, go to the 'Downloads/Kasir' directory and type php spark serve (press Enter).
 - Open a web browser and go to http://localhost:8080 (or the port specified in the terminal).
 
+### Default crendentials
+
+- Admin
+  username = Fauzan
+  email = ojantampan@gmail.com
+  password = duaribusebelas
+
+- Kasir
+  username = Dobleh
+  email = dojesmanja@gmail.com
+  password = butuhduit
+
 ### WARNING
 
 - If you use windows 10 or windows 11 you need to configure the php program
