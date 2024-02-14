@@ -28,6 +28,7 @@
     <link rel="icon" type="image/png" href="<?= base_url() ?>/Corporate/assets/img/favicon.png" />
     <title>Halo</title>
     <script src="<?= base_url('js/node_modules/jquery/dist/jquery.min.js') ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--     Fonts and icons     -->
     <link
