@@ -15,7 +15,7 @@ class Kategori extends BaseController
     {
         $noHalaman = $this->request->getVar('page_kategori') ? $this->request->getVar('page_kategori') : 1;
         $data = [
-            'datakategori' => $this->kategori->paginate(10, 'kategori'),
+            'datakategori' => $this->kategori->paginate(2, 'kategori'),
             'pager' => $this->kategori->pager,
             'nohalaman' => $noHalaman
         ];

@@ -223,25 +223,8 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="border-top py-3 px-3 d-flex align-items-center">
-                  <li  class="btn btn-sm btn-white d-sm-block d-none mb-0">
-                    <a class="page-link" href="#"> Previous</a>
-                   
-                  </li>
-                  <nav aria-label="..." class="ms-auto">
-                    <ul class="pagination pagination-light mb-0">
-                      <li class="page-item active" aria-current="page">
-                        <span class="page-link font-weight-bold"><?= $pager->links('kategori'.'paging_data'); ?></span>
-                      </li>
-                    </ul>
-                  </nav>
-
-                  
-                  <li
-                    class="btn btn-sm btn-white d-sm-block d-none mb-0 ms-auto"
-                  >
-                    <a class="page-link" href="#"> next</a>
-                  </li>
+                <div class="float-center">
+                  <?= $pager->links('kategori', 'paging_data'); ?>
                 </div>
               </div>
             </div>
