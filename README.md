@@ -2,7 +2,6 @@
 
 This Cashier application built with CodeIgniter 4 is a project designed for the Final Project (UKK). The actors in this application consist of three roles:
 
-    Customer
     Cashier
     Admin
 
