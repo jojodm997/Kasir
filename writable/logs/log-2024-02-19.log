@@ -1474,3 +1474,1330 @@ WARNING - 2024-02-19 10:33:26 --> [DEPRECATED] Creation of dynamic property App\
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:53:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:54:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:54:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:54:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:54:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:54:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:54:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 11:54:47 --> ErrorException: Undefined variable $nohalaman
+in APPPATH/Views/kasir/satuan/data.php on line 133.
+ 1 APPPATH/Views/kasir/satuan/data.php(133): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/jojo/Documents/GitHub/Kasir/app/Views/kasir/satuan/data.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Satuan.php(17): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:55:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 11:55:31 --> ErrorException: Undefined variable $nomor
+in APPPATH/Views/kasir/satuan/data.php on line 150.
+ 1 APPPATH/Views/kasir/satuan/data.php(150): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/jojo/Documents/GitHub/Kasir/app/Views/kasir/satuan/data.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Satuan.php(17): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:56:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:56:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:56:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:58:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:59:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 11:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 11:59:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 11:59:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformtambah.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(57): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formTambah()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:00:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:01:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:01:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:01:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformtambah.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(57): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formTambah()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:01:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:01:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformtambah.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(57): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formTambah()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:05:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:05:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:05:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:05:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:05:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformtambah.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(57): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formTambah()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:05:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:05:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformedit.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(104): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formEdit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:06:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:06:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformedit.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(104): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formEdit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:06:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:06:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformedit.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(104): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formEdit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:06:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:06:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:06:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:06:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:06:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformedit.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(104): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formEdit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:07:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:07:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "satuan/modalformtambah.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(57): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formTambah()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:08:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:08:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:08:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:08:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kasir/satuan/modalformtambah.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(57): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formTambah()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:09:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kasir/satuan/modalformedit.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(104): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formEdit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:09:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:10:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-19 12:10:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kasir/satuan/modalformedit.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Satuan.php(104): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Satuan->formEdit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:11:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:12:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:13:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:13:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:14:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:14:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:14:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:14:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:14:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:14:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:14:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:14:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:15:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:16:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:16:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:16:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:16:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:16:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:16:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:17:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:17:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:17:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:17:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:17:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:17:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:18:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:18:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:18:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:18:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:19:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:19:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:19:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:19:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:20:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:20:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:20:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:21:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:21:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:21:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:21:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:21:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:21:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:21:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:22:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-19 12:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-19 12:23:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')

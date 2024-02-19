@@ -54,7 +54,7 @@ class Satuan extends BaseController
         if ($this->request->isAJAX()) {
             $aksi = $this->request->getPost('aksi');
             $msg = [
-                'data' => view('satuan/modalformtambah', ['aksi' => $aksi])
+                'data' => view('kasir/satuan/modalformtambah', ['aksi' => $aksi])
             ];
             echo json_encode($msg);
         }
@@ -101,7 +101,7 @@ class Satuan extends BaseController
             ];
 
             $msg = [
-                'data' => view('satuan/modalformedit', $data)
+                'data' => view('kasir/satuan/modalformedit', $data)
             ];
             echo json_encode($msg);
         }
