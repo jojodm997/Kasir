@@ -29,6 +29,9 @@
     <title>Halo</title>
     <script src="<?= base_url('js/node_modules/jquery/dist/jquery.min.js') ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
+
+
 
     <!--     Fonts and icons     -->
     <link

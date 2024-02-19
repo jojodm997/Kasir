@@ -62,4 +62,39 @@ class Kategori extends BaseController
             echo json_encode($msg);
         }
     }
+
+     function formEdit()
+    {
+        if ($this->request->isAJAX()) {
+            $idKategori =  $this->request->getVar('idkategori');
+
+            $ambildatakategori = $this->kategori->find($idKategori);
+            $data = [
+                'idkategori' => $idKategori,
+                'namakategori' => $ambildatakategori['katnama']
+            ];
+
+            $msg = [
+                'data' => view('kasir/kategori/modalformedit', $data)
+            ];
+            echo json_encode($msg);
+        }
+    }
+
+    function updatedata()
+    {
+        if ($this->request->isAJAX()) {
+            $idKategori = $this->request->getVar('idkategori');
+            $namaKategori = $this->request->getVar('namakategori');
+
+            $this->kategori->update($idKategori, [
+                'katnama' => $namaKategori
+            ]);
+
+            $msg = [
+                'sukses' =>  'Data kategori berhasil diupdate'
+            ];
+            echo json_encode($msg);
+        }
+    }
 }
