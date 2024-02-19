@@ -89,32 +89,36 @@ class Satuan extends BaseController
         }
     }
 
-    function formEdit()
-    {
-        if ($this->request->isAJAX()) {
-            $idsatuan =  $this->request->getVar('idsatuan');
+function formEdit()
+{
+    if ($this->request->isAJAX()) {
+        $idsatuan = $this->request->getVar('idsatuan');
+        $ambildatasatuan = $this->satuan->find($idsatuan);
+        $data = [
+            'idsatuan' => $idsatuan,
+            'namasatuan' => $ambildatasatuan['satnama'] // Menyesuaikan nama field dengan struktur data di database
+        ];
 
-            $ambildatasatuan = $this->satuan->find($idsatuan);
-            $data = [
-                'idsatuan' => $idsatuan,
-                'namasatuan' => $ambildatasatuan['satnama']
-            ];
-
-            $msg = [
-                'data' => view('kasir/satuan/modalformedit', $data)
-            ];
-            echo json_encode($msg);
-        }
+        $msg = [
+            'data' => view('kasir/satuan/modalformedit', $data) // Mengirim data ke view modalformedit
+        ];
+        echo json_encode($msg);
     }
+}
 
-    function updatedata()
-    {
-        if ($this->request->isAJAX()) {
-            $idsatuan = $this->request->getVar('idsatuan');
-            $msg = [
-                'sukses' =>  'Data satuan berhasil diupdate'
-            ];
-            echo json_encode($msg);
-        }
+function updatedata()
+{
+    if ($this->request->isAJAX()) {
+        $idsatuan = $this->request->getVar('idsatuan');
+        $namasatuan = $this->request->getVar('namasatuan'); // Mengambil data baru dari form
+
+        // Lakukan proses update data ke dalam database
+        $this->satuan->update($idsatuan, ['satnama' => $namasatuan]);
+
+        $msg = [
+            'sukses' =>  'Data satuan berhasil diupdate'
+        ];
+        echo json_encode($msg);
     }
+}
 }

@@ -102,9 +102,6 @@ function edit(id) {
         success: function(response) {
             if (response.data) {
                 $('.viewmodal').html(response.data).show();
-                $('#modalformedit').on('shown.bs.modal', function(event) {
-                    $('#namasatuan').focus();
-                });
                 $('#modalformedit').modal('show');
             }
         },
@@ -113,6 +110,7 @@ function edit(id) {
         }
     });
 }
+
 
 $(document).ready(function() {
     tampilDataSatuan();
