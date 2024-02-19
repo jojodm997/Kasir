@@ -1,14 +1,13 @@
        <?= $this->extend('templates/index'); ?>
 
       <?= $this->section('page-content'); ?>
-
-      <link rel="stylesheet" href="<?= base_url('assets') ?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+<!-- DataTables -->
+<link rel="stylesheet" href="<?= base_url('assets') ?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
 <link rel="stylesheet" href="<?= base_url('assets') ?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 <script src="<?= base_url('assets') ?>/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?= base_url('assets') ?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="<?= base_url('assets') ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?= base_url('assets') ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">
@@ -42,7 +41,6 @@
 </div>
 <div class="viewmodal" style="display: none;"></div>
 <script>
-
 function tampilDataSatuan() {
     var table = $('#datasatuan').DataTable({
         "processing": true,
@@ -144,5 +142,4 @@ $(document).ready(function() {
     });
 });
 </script>
-
 <?= $this->endSection() ?>

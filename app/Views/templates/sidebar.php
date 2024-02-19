@@ -222,7 +222,7 @@
                   </g>
                 </svg>
               </div>
-              <span class="nav-link-text ms-1">Kategori</span>
+              <span class="nav-link-text ms-1">Satuan</span>
             </a>
           </li>
          

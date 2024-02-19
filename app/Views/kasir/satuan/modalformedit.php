@@ -3,6 +3,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="modalformeditLabel">Edit Satuan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <?= form_open('satuan/updatedata', ['class' => 'formsimpan']) ?>
             <input type="hidden" name="idsatuan" value="<?= $idsatuan; ?>">

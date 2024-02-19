@@ -4,7 +4,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="modaltambahsatuanLabel">Tambah Satuan</h5>
-               
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <?= form_open('satuan/simpandata', ['class' => 'formsimpan']) ?>
             <input type="hidden" name="aksi" id="aksi" value="<?= $aksi; ?>">
