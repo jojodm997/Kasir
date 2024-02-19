@@ -131,7 +131,7 @@
                   </g>
                 </svg>
               </div>
-              <span class="nav-link-text ms-1">Tables</span>
+              <span class="nav-link-text ms-1">User</span>
             </a>
           </li>
            <?php endif; ?>
