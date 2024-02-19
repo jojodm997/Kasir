@@ -53,24 +53,45 @@
         <div class="row">
           <div class="col-12">
             <div class="card border shadow-xs mb-4">
-               <div class="card-header border-bottom pb-0">
-              <div class="d-sm-flex align-items-center mb-3">
-                <div>
-                  <h6 class="font-weight-semibold text-lg mb-0">Recent transactions</h6>
-                  <p class="text-sm mb-sm-0">These are details about the last transactions</p>
-                </div>
-                <div class="ms-auto d-flex">
-                  <button type="button" class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0 me-2">
-                    <span class="btn-inner--icon">
-                      <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="d-block me-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                      </svg>
-                    </span>
-                    <span class="btn-inner--text">Download</span>
-                  </button>
+              <div class="card-header border-bottom pb-0">
+                <div class="d-sm-flex align-items-center mb-3">
+                  <div>
+                    <h6 class="font-weight-semibold text-lg mb-0">
+                      Recent transactions
+                    </h6>
+                    <p class="text-sm mb-sm-0">
+                      These are details about the last transactions
+                    </p>
+                  </div>
+                  <div class="ms-auto d-flex">
+                    <div class="input-group input-group-sm ms-auto me-2">
+                    <button
+                      type="submit"
+                      class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0 me-2 tombolTambah"
+                    >
+                      <span class="btn-inner--icon">
+                        <svg
+                          width="16"
+                          height="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="d-block me-2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                          />
+                        </svg>
+                      </span>
+                      <span class="btn-inner--text">Tambah data</span>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
               <div class="card-body px-0 py-0">
                 <div class="table-responsive p-0">
                   <table
@@ -109,7 +130,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <?php $nomor = 1 + (($nohalaman - 1)  * 5 );
+                      <?php $nomor = 1 + (($nohalaman - 1)  * 2 );
                         foreach($datakategori as $row) :  ?>
                        
 
