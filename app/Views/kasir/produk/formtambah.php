@@ -67,7 +67,7 @@
                     <div class="input-group input-group-sm ms-auto me-2">
                     <button
                       type="button"
-                      class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0 me-2 tombolTambah " onclick="window.location='<?= site_url('produk/add') ?>'"
+                      class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0 me-2 tombolTambah " onclick="window.location='<?= site_url('produk/index') ?>'"
                     >
                       <span class="btn-inner--icon">
                         <svg
@@ -87,7 +87,7 @@
                           />
                         </svg>
                       </span>
-                      <span class="btn-inner--text">Tambah data</span>
+                      <span class="btn-inner--text">Kembali</span>
                     </button>
                   </div>
                 </div>
