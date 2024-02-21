@@ -753,3 +753,373 @@ WARNING - 2024-02-21 06:32:51 --> [DEPRECATED] Creation of dynamic property App\
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:40:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:40:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:40:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:40:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-21 06:40:43 --> ErrorException: Undefined property: App\Controllers\Produk::$db
+in APPPATH/Controllers/Produk.php on line 46.
+ 1 APPPATH/Controllers/Produk.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Produk->ambilDataSatuan()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:42:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:42:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:42:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:42:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:42:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:42:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+CRITICAL - 2024-02-21 06:42:52 --> ErrorException: Undefined property: App\Controllers\Produk::$db
+in APPPATH/Controllers/Produk.php on line 46.
+ 1 APPPATH/Controllers/Produk.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Produk->ambilDataSatuan()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:47:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:47:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:47:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:47:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:50:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:50:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:50:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:50:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:53:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:53:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:53:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:53:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:53:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:53:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:53:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:53:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:53:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:53:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:53:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:53:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:56:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:56:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:56:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:56:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:56:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:56:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:56:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:56:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:56:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:56:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:56:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:59:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:59:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:59:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:59:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:59:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:59:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:59:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:59:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:59:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+INFO - 2024-02-21 06:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-21 06:59:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$produk is deprecated in APPPATH/Controllers/Produk.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')
+WARNING - 2024-02-21 06:59:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Produk::$kategori is deprecated in APPPATH/Controllers/Produk.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Produk->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/jojo/Documents/GitHub/Kasir/public/index.php')

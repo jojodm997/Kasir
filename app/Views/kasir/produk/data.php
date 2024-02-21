@@ -230,4 +230,5 @@
              });
            });
          </script>
+
          <?= $this->endSection() ?>
