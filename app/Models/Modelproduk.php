@@ -19,5 +19,4 @@ class Modelproduk extends Model
         'harga_jual',
         'gambar'
     ];
-
 }
