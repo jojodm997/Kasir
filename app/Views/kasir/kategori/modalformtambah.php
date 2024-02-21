@@ -12,6 +12,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <?= form_open('kategori/simpandata', ['class' => 'formsimpan']) ?>
+      <input type="hidden" name="aksi" id="aksi" value="<?= $aksi ?>">
+
       <div class="modal-body">
         <div class="form-group">
           <label for="">Nama Kategori</label>
@@ -28,7 +30,7 @@
 </div>
 
 <script>
-  $(document).ready(function(){
+  $(document).ready(function() {
     $('.formsimpan').submit(function(e) {
       e.preventDefault();
       $.ajax({
@@ -40,18 +42,24 @@
           $('.tombolSimpan').prop('disabled', true);
           $('.tombolSimpan').html('<i class="fa fa-spin fa-spinner"></i>');
         },
+
         success: function(response) {
+          let aksi = $('#aksi').val();
           if (response.sukses) {
-            var alertMessage = '<div class="alert bg-gradient-success text-dark text-white" role="alert">';
-            alertMessage += '<strong>Success!</strong> ' + response.sukses;
-            alertMessage += '</div>';
-            $('#modaltambahkategori .modal-body').prepend(alertMessage); // Prepend the alert message to the modal body
-            setTimeout(function() {
-              $('.alert').fadeOut('slow', function() {
-                $(this).remove();
+            if (aksi == 0) {
+              Swal.fire(
+                'Berhasil',
+                response.sukses,
+                'success'
+              ).then((result) => {
+                if (result.isConfirmed) {
+                  window.location.reload();
+                }
               });
-            }, 3000);
-            window.location.reload();
+            } else {
+              tampilKategori();
+              $('#modaltambahkategori').modal('hide');
+            }
           }
         },
         error: function(xhr, thrownError) {

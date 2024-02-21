@@ -10,7 +10,7 @@ class Kategori extends BaseController
     {
         $this->kategori = new ModelKategori();
     }
-    
+
     public function index()
     {
         $noHalaman = $this->request->getVar('page_kategori') ? $this->request->getVar('page_kategori') : 1;
@@ -19,39 +19,43 @@ class Kategori extends BaseController
             'pager' => $this->kategori->pager,
             'nohalaman' => $noHalaman
         ];
-        
+
         return view('/kasir/kategori/data', $data);
     }
 
-    function formTambah(){
-        if($this->request->isAJAX()){
+    function formTambah()
+    {
+        if ($this->request->isAJAX()) {
+            $data = [
+                'aksi' => $this->request->getPost('aksi')
+            ];
             $msg = [
-                'data' => view('kasir/kategori/modalformtambah')
+                'data' => view('kasir/kategori/modalformtambah', $data)
             ];
             echo json_encode($msg);
-        }else {
+        } else {
             exit('Maaf tidak ada halaman yang bisa ditampilkan');
         }
     }
 
-    public function simpandata(){
-         if($this->request->isAJAX()){
-             $namakategori = $this->request->getVar('namakategori');
-        $this->kategori->insert([
-            'katnama' => $namakategori
-        ]);
+    public function simpandata()
+    {
+        if ($this->request->isAJAX()) {
+            $namakategori = $this->request->getVar('namakategori');
+            $this->kategori->insert([
+                'katnama' => $namakategori
+            ]);
 
-        $msg = [
-            'sukses' => 'Kategori berhasil ditambahkan'
-        ];
-        echo json_encode($msg);
-         }
-       
+            $msg = [
+                'sukses' => 'Kategori berhasil ditambahkan'
+            ];
+            echo json_encode($msg);
+        }
     }
 
     function hapus()
     {
-        if ($this->request->isAJAX()){
+        if ($this->request->isAJAX()) {
             $idkategori = $this->request->getVar('idkategori');
 
             $this->kategori->delete($idkategori);
@@ -63,7 +67,7 @@ class Kategori extends BaseController
         }
     }
 
-     function formEdit()
+    function formEdit()
     {
         if ($this->request->isAJAX()) {
             $idKategori =  $this->request->getVar('idkategori');

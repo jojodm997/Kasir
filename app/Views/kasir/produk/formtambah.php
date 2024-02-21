@@ -2,6 +2,9 @@
 
        <?= $this->section('page-content'); ?>
 
+
+
+       <script src="<?= base_url('assets/plugins/autoNumeric.js') ?>"></script>
        <div class="container-fluid py-4 px-5">
          <div class="row">
            <div class="col-12">
@@ -53,6 +56,7 @@
                      </div>
                    </div>
                  </div>
+
                  <div class="card-body">
                    <?= form_open_multipart('', ['class' => 'formsimpanproduk']) ?>
                    <?= csrf_field(); ?>
@@ -60,21 +64,25 @@
                    <div class="form-group">
                      <label for="kodebarcode">Kode Barcode</label>
                      <div class="col-sm-8">
-                       <input type="email" class="form-control" id="kodebarcode" name="kodebarcode" autofocus>
+                       <input type="text" class="form-control" id="kodebarcode" name="kodebarcode" autofocus>
+                       <div class="errorKodeBarcode" style="display: none;">
+                       </div>
                      </div>
                    </div>
 
                    <div class="form-group">
                      <label for="namaproduk">Nama Produk</label>
                      <div class="col-sm-8">
-                       <input type="email" class="form-control" id="namaproduk" name="namaproduk">
+                       <input type="text" class="form-control" id="namaproduk" name="namaproduk">
+                       <div class="errorNamaProduk" style="display: none;">
+                       </div>
                      </div>
                    </div>
 
                    <div class="form-group">
                      <label for="stok">Stok tersedia</label>
                      <div class="col-sm-4">
-                       <input type="email" class="form-control" id="stok" name="stok" value="0">
+                       <input type="text" class="form-control" id="stok" name="stok" value="0">
                      </div>
                    </div>
 
@@ -113,14 +121,14 @@
                    <div class="form-group">
                      <label for="hargabeli">Harga Beli (Rp)</label>
                      <div class="col-sm-4">
-                       <input type="email" class="form-control" id="hargabeli" name="hargabeli" style="text-align: right;">
+                       <input type="text" class="form-control" id="hargabeli" name="hargabeli" style="text-align: right;">
                      </div>
                    </div>
 
                    <div class="form-group">
                      <label for="hargajual">Harga Jual (Rp)</label>
                      <div class="col-sm-4">
-                       <input type="email" class="form-control" id="hargajual" name="hargajual" style="text-align: right;">
+                       <input type="text" class="form-control" id="hargajual" name="hargajual" style="text-align: right;">
                      </div>
                    </div>
 
@@ -132,9 +140,9 @@
                    </div>
 
                    <div class="form-group">
-                     <label for=""></label>
+                     <label for="uploadgambar"></label>
                      <div class="col-sm-4">
-                       <button type="submit" class="btn btn-dark btn-lg">Simpan</button>
+                       <button type="submit" class="btn btn-dark btn-lg tombolSimpanProduk">Simpan</button>
                      </div>
                    </div>
 
@@ -166,31 +174,200 @@
            }
 
            $(document).ready(function() {
-             tampilKategori();
-           });
-
-           $('.tombolTambahKategori').click(function(e) {
-             e.preventDefault();
-             $.ajax({
-               url: "<?= site_url('kategori/formTambah') ?>",
-               dataType: "json",
-               type: 'post',
-               data: {
-                 aksi: 1
-               },
-               success: function(response) {
-                 if (response.data) {
-                   $('.viewmodal').html(response.data).show();
-                   $('#modaltambahkategori').on('shown.bs.modal', function(event) {
-                     $('#namakategori').focus();
-                   });
-                   $('#modaltambahkategori').modal('show');
-                 }
-               },
-               error: function(xhr, thrownError) {
-                 alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-               }
+             $('#hargabeli').autoNumeric('init', {
+               aSep: ',',
+               aDec: '.',
+               mDec: '2'
              });
+             $('#hargajual').autoNumeric('init', {
+               aSep: ',',
+               aDec: '.',
+               mDec: '2'
+             });
+             $('#stok').autoNumeric('init', {
+               aSep: ',',
+               aDec: '.',
+               mDec: '0'
+             });
+
+             tampilKategori();
+             tampilSatuan();
+
+
+             $('.tombolTambahKategori').click(function(e) {
+               e.preventDefault();
+               $.ajax({
+                 url: "<?= site_url('kategori/formTambah') ?>",
+                 dataType: "json",
+                 type: 'post',
+                 data: {
+                   aksi: 1
+                 },
+                 success: function(response) {
+                   if (response.data) {
+                     $('.viewmodal').html(response.data).show();
+                     $('#modaltambahkategori').on('shown.bs.modal', function(event) {
+                       $('#namakategori').focus();
+                     });
+                     $('#modaltambahkategori').modal('show');
+                   }
+                 },
+                 error: function(xhr, thrownError) {
+                   alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                 }
+               });
+             });
+
+             $('.tombolTambahSatuan').click(function(e) {
+               e.preventDefault();
+               $.ajax({
+                 url: "<?= site_url('satuan/formTambah') ?>",
+                 dataType: "json",
+                 type: 'post',
+                 data: {
+                   aksi: 1
+                 },
+                 success: function(response) {
+                   if (response.data) {
+                     $('.viewmodal').html(response.data).show();
+                     $('#modaltambahsatuan').on('shown.bs.modal', function(event) {
+                       $('#namasatuan').focus();
+                     });
+                     $('#modaltambahsatuan').modal('show');
+                   }
+                 },
+                 error: function(xhr, thrownError) {
+                   alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                 }
+               });
+             });
+
+
+
+             function tampilSatuan() {
+               $.ajax({
+                 url: "<?= site_url('produk/ambilDataSatuan') ?>",
+                 dataType: "json",
+                 success: function(response) {
+                   if (response.data) {
+                     $('#satuan').html(response.data);
+                   }
+                 },
+                 error: function(xhr, thrownError) {
+                   alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                 }
+               });
+             }
+
+             $('.tombolSimpanProduk').click(function(e) {
+               e.preventDefault();
+
+               let form = $('.formsimpanproduk')[0];
+
+               let data = new FormData(form);
+
+               $.ajax({
+                 type: "post",
+                 url: "<?= site_url('produk/simpandata') ?>",
+                 data: data,
+                 dataType: "json",
+                 enctype: 'multipart/form-data',
+                 processData: false,
+                 contentType: false,
+                 cache: false,
+                 beforeSend: function() {
+                   $('.tombolSimpanProduk').html('<i class="spinner-grow spinner-grow-sm"></i>');
+                   $('.tombolSimpanProduk').prop('disabled', true);
+                 },
+                 complete: function() {
+                   $('.tombolSimpanProduk').html('Simpan');
+                   $('.tombolSimpanProduk').prop('disabled', false);
+                 },
+                 success: function(response) {
+                   if (response.error) {
+                     let msg = response.error;
+                     if (msg.errorKodeBarcode) {
+                       $('.errorKodeBarcode').html(msg.errorKodeBarcode).show();
+                       $('#kodebarcode').addClass('is-invalid');
+                     } else {
+                       $('.errorKodeBarcode').fadeOut();
+                       $('#kodebarcode').removeClass('is-invalid');
+                       $('#kodebarcode').addClass('is-valid');
+                     }
+
+                     if (msg.errorNamaProduk) {
+                       $('.errorNamaProduk').html(msg.errorNamaProduk).show();
+                       $('#namaproduk').addClass('is-invalid');
+                     } else {
+                       $('.errorNamaProduk').fadeOut();
+                       $('#namaproduk').removeClass('is-invalid');
+                       $('#namaproduk').addClass('is-valid');
+                     }
+
+                     if (msg.errorStok) {
+                       $('.errorStok').html(msg.errorStok).show();
+                       $('#stok').addClass('is-invalid');
+                     } else {
+                       $('.errorStok').fadeOut();
+                       $('#stok').removeClass('is-invalid');
+                       $('#stok').addClass('is-valid');
+                     }
+
+                     if (msg.errorKategori) {
+                       $('.errorKategori').html(msg.errorKategori).show();
+                       $('#kategori').addClass('is-invalid');
+                     } else {
+                       $('.errorKategori').fadeOut();
+                       $('#kategori').removeClass('is-invalid');
+                       $('#kategori').addClass('is-valid');
+                     }
+
+                     if (msg.errorSatuan) {
+                       $('.errorSatuan').html(msg.errorSatuan).show();
+                       $('#satuan').addClass('is-invalid');
+                     } else {
+                       $('.errorSatuan').fadeOut();
+                       $('#satuan').removeClass('is-invalid');
+                       $('#satuan').addClass('is-valid');
+                     }
+
+                     if (msg.errorHargaBeli) {
+                       $('.errorHargaBeli').html(msg.errorHargaBeli).show();
+                       $('#hargabeli').addClass('is-invalid');
+                     } else {
+                       $('.errorHargaBeli').fadeOut();
+                       $('#hargabeli').removeClass('is-invalid');
+                       $('#hargabeli').addClass('is-valid');
+                     }
+
+                     if (msg.errorHargaJual) {
+                       $('.errorHargaJual').html(msg.errorHargaJual).show();
+                       $('#hargajual').addClass('is-invalid');
+                     } else {
+                       $('.errorHargaJual').fadeOut();
+                       $('#hargajual').removeClass('is-invalid');
+                       $('#hargajual').addClass('is-valid');
+                     }
+
+                     if (msg.errorUpload) {
+                       $('.errorUpload').html(msg.errorUpload).show();
+                       $('#uploadgambar').addClass('is-invalid');
+                     }
+                   } else {
+                     alert(response.sukses);
+                   }
+                 },
+                 error: function(xhr, thrownError) {
+                   alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                 }
+
+
+
+
+               });
+
+             });
+
            });
          </script>
 

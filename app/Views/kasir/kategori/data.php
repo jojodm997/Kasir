@@ -245,6 +245,10 @@
                $.ajax({
                  url: "<?= site_url('kategori/formTambah') ?>",
                  dataType: "json",
+                 type: 'post',
+                 data: {
+                   aksi: 0
+                 },
                  success: function(response) {
                    if (response.data) {
                      $('.viewmodal').html(response.data).show();
