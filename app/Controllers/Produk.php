@@ -12,6 +12,6 @@ class Produk extends BaseController
     }
     public function index()
     {
-        return view('')
+        return view('kasir/produk/data')
     }
 }
