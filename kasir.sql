@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 05, 2024 at 06:26 PM
+-- Generation Time: Feb 21, 2024 at 11:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -129,7 +129,32 @@ INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `succ
 (13, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-05 16:22:58', 1),
 (14, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-05 16:42:43', 1),
 (15, '127.0.0.1', 'dojesmanja@gmail.com', 8, '2024-02-05 16:46:05', 1),
-(16, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-05 16:48:52', 1);
+(16, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-05 16:48:52', 1),
+(17, '127.0.0.1', 'dojesmanja@gmail.com', 8, '2024-02-07 03:37:09', 1),
+(18, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-07 03:49:46', 1),
+(19, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-07 03:50:28', 1),
+(20, '127.0.0.1', 'dojesmanja@gmail.com', 8, '2024-02-07 03:57:00', 1),
+(21, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-07 04:08:26', 1),
+(22, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-10 01:37:10', 1),
+(23, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-10 08:06:26', 1),
+(24, '127.0.0.1', 'Fauzan', NULL, '2024-02-10 12:17:23', 0),
+(25, '127.0.0.1', 'Fauzan', NULL, '2024-02-10 12:17:39', 0),
+(26, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-10 12:18:25', 1),
+(27, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-11 10:39:28', 1),
+(28, '127.0.0.1', 'dojesmanja@gmail.com', 8, '2024-02-14 11:53:46', 1),
+(29, '127.0.0.1', 'dojesmanja@gmail.com', 8, '2024-02-14 11:56:38', 1),
+(30, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-14 11:57:24', 1),
+(31, '127.0.0.1', 'dojesmanja@gmail.com', 8, '2024-02-14 11:58:06', 1),
+(32, '127.0.0.1', 'dojesmanja@gmail.com', 8, '2024-02-14 11:58:21', 1),
+(33, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-14 12:02:28', 1),
+(34, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-15 03:29:58', 1),
+(35, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-15 06:15:45', 1),
+(36, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-15 15:01:03', 1),
+(37, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-17 07:48:10', 1),
+(38, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-19 02:08:52', 1),
+(39, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-19 05:11:14', 1),
+(40, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-19 09:28:35', 1),
+(41, '127.0.0.1', 'ojantampan@gmail.com', 7, '2024-02-21 04:52:20', 1);
 
 -- --------------------------------------------------------
 
@@ -194,43 +219,30 @@ CREATE TABLE `auth_users_permissions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `detailpenjualan`
+-- Table structure for table `kategori`
 --
 
-CREATE TABLE `detailpenjualan` (
-  `DetailID` int(11) NOT NULL,
-  `PenjualanID` int(11) NOT NULL,
-  `ProdukID` int(11) NOT NULL,
-  `JumlahProduk` int(11) NOT NULL,
-  `SubTotal` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `kategori` (
+  `katid` int(11) NOT NULL,
+  `katnama` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `detailpenjualan`
+-- Dumping data for table `kategori`
 --
 
-INSERT INTO `detailpenjualan` (`DetailID`, `PenjualanID`, `ProdukID`, `JumlahProduk`, `SubTotal`) VALUES
-(1, 1, 3, 2, 2000.00);
-
---
--- Triggers `detailpenjualan`
---
-DELIMITER $$
-CREATE TRIGGER `kurangStock` AFTER INSERT ON `detailpenjualan` FOR EACH ROW UPDATE produk SET stock = stock - NEW.jumlahProduk
-WHERE ProdukID=NEW.ProdukID
-$$
-DELIMITER ;
-DELIMITER $$
-CREATE TRIGGER `nambahStock` AFTER DELETE ON `detailpenjualan` FOR EACH ROW UPDATE produk SET Stock = Stock + OLD.JumlahProduk
-WHERE ProdukID = OLD.ProdukID
-$$
-DELIMITER ;
-DELIMITER $$
-CREATE TRIGGER `nambahTotalHarga` AFTER INSERT ON `detailpenjualan` FOR EACH ROW UPDATE penjualan
-SET TotalHarga = TotalHarga + NEW.SubTotal
-WHERE PenjualanID=NEW.PenjualanID
-$$
-DELIMITER ;
+INSERT INTO `kategori` (`katid`, `katnama`) VALUES
+(4, 'rokok\r\n'),
+(6, 'semangat'),
+(7, 'cdssssss'),
+(8, 'cd'),
+(20, 'ojandd'),
+(22, 'sd'),
+(23, 'dasda'),
+(24, 'udud'),
+(25, 'sfadfqfqw'),
+(26, 'sdfsdfse'),
+(27, 'oke');
 
 -- --------------------------------------------------------
 
@@ -253,7 +265,17 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`, `batch`) VALUES
-(1, '2017-11-20-223112', 'Myth\\Auth\\Database\\Migrations\\CreateAuthTables', 'default', 'Myth\\Auth', 1706882184, 1);
+(1, '2017-11-20-223112', 'Myth\\Auth\\Database\\Migrations\\CreateAuthTables', 'default', 'Myth\\Auth', 1706882184, 1),
+(2, '2021-02-23-084451', 'App\\Database\\Migrations\\Kategori', 'default', 'App', 1707909340, 2),
+(3, '2021-02-23-085017', 'App\\Database\\Migrations\\Satuan', 'default', 'App', 1707909340, 2),
+(4, '2021-02-23-091656', 'App\\Database\\Migrations\\Produk', 'default', 'App', 1707909340, 2),
+(5, '2021-02-24-161052', 'App\\Database\\Migrations\\Supplier', 'default', 'App', 1707909340, 2),
+(6, '2021-02-24-161641', 'App\\Database\\Migrations\\Pembelian', 'default', 'App', 1707909340, 2),
+(7, '2021-02-24-163504', 'App\\Database\\Migrations\\Pembeliandetail', 'default', 'App', 1707909340, 2),
+(8, '2021-02-24-170642', 'App\\Database\\Migrations\\Pelanggan', 'default', 'App', 1707909340, 2),
+(9, '2021-02-24-170646', 'App\\Database\\Migrations\\Penjualan', 'default', 'App', 1707909340, 2),
+(10, '2021-02-24-170649', 'App\\Database\\Migrations\\Penjualandetail', 'default', 'App', 1707909340, 2),
+(11, '2021-02-24-170651', 'App\\Database\\Migrations\\Temppenjualan', 'default', 'App', 1707909340, 2);
 
 -- --------------------------------------------------------
 
@@ -262,19 +284,44 @@ INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`
 --
 
 CREATE TABLE `pelanggan` (
-  `PelangganID` int(11) NOT NULL,
-  `NamaPelanggan` varchar(255) NOT NULL,
-  `Alamat` text NOT NULL,
-  `NomorTelepon` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `pel_kode` int(11) NOT NULL,
+  `pel_nama` varchar(100) NOT NULL,
+  `pel_alamat` text NOT NULL,
+  `pel_telp` char(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
 
 --
--- Dumping data for table `pelanggan`
+-- Table structure for table `pembelian`
 --
 
-INSERT INTO `pelanggan` (`PelangganID`, `NamaPelanggan`, `Alamat`, `NomorTelepon`) VALUES
-(1, 'Oya Suryana', 'Bayuning', '0852241646'),
-(2, 'Abiq Sabiqul Khoir', 'Sukamulya', '08645454542');
+CREATE TABLE `pembelian` (
+  `beli_faktur` char(20) NOT NULL,
+  `beli_tgl` date NOT NULL,
+  `beli_jenisbayar` enum('T','K') NOT NULL DEFAULT 'T',
+  `beli_supkode` int(11) NOT NULL,
+  `beli_dispersen` double(11,2) NOT NULL DEFAULT 0.00,
+  `beli_disuang` double(11,2) NOT NULL DEFAULT 0.00,
+  `beli_totalkotor` double(11,2) NOT NULL DEFAULT 0.00,
+  `beli_totalbersih` double(11,2) NOT NULL DEFAULT 0.00
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pembelian_detail`
+--
+
+CREATE TABLE `pembelian_detail` (
+  `detbeli_id` bigint(11) NOT NULL,
+  `detbeli_faktur` char(20) NOT NULL,
+  `detbeli_kodebarcode` char(50) NOT NULL,
+  `detbeli_hargabeli` double(11,2) NOT NULL DEFAULT 0.00,
+  `detbeli_hargajual` double(11,2) NOT NULL DEFAULT 0.00,
+  `detbeli_jml` double(11,2) NOT NULL DEFAULT 0.00,
+  `detbeli_subtotal` double(11,2) NOT NULL DEFAULT 0.00
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -283,27 +330,30 @@ INSERT INTO `pelanggan` (`PelangganID`, `NamaPelanggan`, `Alamat`, `NomorTelepon
 --
 
 CREATE TABLE `penjualan` (
-  `PenjualanID` int(11) NOT NULL,
-  `TanggalPenjulaan` date NOT NULL,
-  `TotalHarga` decimal(10,2) NOT NULL,
-  `PelangganID` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `jual_faktur` char(20) NOT NULL,
+  `jual_tgl` date NOT NULL,
+  `jual_pelkode` int(11) NOT NULL,
+  `jual_dispersen` double(11,2) NOT NULL DEFAULT 0.00,
+  `jual_disuang` double(11,2) NOT NULL DEFAULT 0.00,
+  `jual_totalkotor` double(11,2) NOT NULL DEFAULT 0.00,
+  `jual_totalbersih` double(11,2) NOT NULL DEFAULT 0.00
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
 
 --
--- Dumping data for table `penjualan`
+-- Table structure for table `penjualan_detail`
 --
 
-INSERT INTO `penjualan` (`PenjualanID`, `TanggalPenjulaan`, `TotalHarga`, `PelangganID`) VALUES
-(1, '2024-01-26', 7000.00, 1);
-
---
--- Triggers `penjualan`
---
-DELIMITER $$
-CREATE TRIGGER `mengurangitotalharga` AFTER DELETE ON `penjualan` FOR EACH ROW UPDATE penjualan SET TotalHarga = TotalHarga - OLD.TotalHarga
-WHERE PenjualanID = OLD.PenjualanID
-$$
-DELIMITER ;
+CREATE TABLE `penjualan_detail` (
+  `detjual_id` bigint(11) NOT NULL,
+  `detjual_faktur` char(20) NOT NULL,
+  `detjual_kodebarcode` char(50) NOT NULL,
+  `detjual_hargabeli` double(11,2) NOT NULL DEFAULT 0.00,
+  `detjual_hargajual` double(11,2) NOT NULL DEFAULT 0.00,
+  `detjual_jml` double(11,2) NOT NULL DEFAULT 0.00,
+  `detjual_subtotal` double(11,2) NOT NULL DEFAULT 0.00
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -312,20 +362,66 @@ DELIMITER ;
 --
 
 CREATE TABLE `produk` (
-  `ProdukID` int(11) NOT NULL,
-  `NamaProduk` varchar(255) NOT NULL,
-  `Harga` decimal(10,2) NOT NULL,
-  `Stock` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `kodebarcode` char(50) NOT NULL,
+  `namaproduk` varchar(100) NOT NULL,
+  `produk_satid` int(11) NOT NULL,
+  `produk_katid` int(11) NOT NULL,
+  `stok_tersedia` double(11,2) NOT NULL DEFAULT 0.00,
+  `harga_beli` double(11,2) NOT NULL DEFAULT 0.00,
+  `harga_jual` double(11,2) NOT NULL DEFAULT 0.00,
+  `gambar` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
 
 --
--- Dumping data for table `produk`
+-- Table structure for table `satuan`
 --
 
-INSERT INTO `produk` (`ProdukID`, `NamaProduk`, `Harga`, `Stock`) VALUES
-(1, 'Indomie Rasa Ayam Bawang', 2500.00, 30),
-(2, 'Indomie Mie Goreng Mie Aceh', 2500.00, 17),
-(3, 'Teh Gelas', 1000.00, 8);
+CREATE TABLE `satuan` (
+  `satid` int(11) NOT NULL,
+  `satnama` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `satuan`
+--
+
+INSERT INTO `satuan` (`satid`, `satnama`) VALUES
+(16, 'Akucsdcs'),
+(18, 'csdcs'),
+(19, 'orapopo'),
+(20, 'csdcsd'),
+(21, 'oke');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `supplier`
+--
+
+CREATE TABLE `supplier` (
+  `sup_kode` int(11) NOT NULL,
+  `sup_nama` varchar(100) NOT NULL,
+  `sup_alamat` text NOT NULL,
+  `sup_telp` char(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `temp_penjualan`
+--
+
+CREATE TABLE `temp_penjualan` (
+  `detjual_id` bigint(11) NOT NULL,
+  `detjual_faktur` char(20) NOT NULL,
+  `detjual_kodebarcode` char(50) NOT NULL,
+  `detjual_hargabeli` double(11,2) NOT NULL DEFAULT 0.00,
+  `detjual_hargajual` double(11,2) NOT NULL DEFAULT 0.00,
+  `detjual_jml` double(11,2) NOT NULL DEFAULT 0.00,
+  `detjual_subtotal` double(11,2) NOT NULL DEFAULT 0.00
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -427,10 +523,10 @@ ALTER TABLE `auth_users_permissions`
   ADD KEY `user_id_permission_id` (`user_id`,`permission_id`);
 
 --
--- Indexes for table `detailpenjualan`
+-- Indexes for table `kategori`
 --
-ALTER TABLE `detailpenjualan`
-  ADD PRIMARY KEY (`DetailID`);
+ALTER TABLE `kategori`
+  ADD PRIMARY KEY (`katid`);
 
 --
 -- Indexes for table `migrations`
@@ -442,19 +538,63 @@ ALTER TABLE `migrations`
 -- Indexes for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  ADD PRIMARY KEY (`PelangganID`);
+  ADD PRIMARY KEY (`pel_kode`);
+
+--
+-- Indexes for table `pembelian`
+--
+ALTER TABLE `pembelian`
+  ADD PRIMARY KEY (`beli_faktur`),
+  ADD KEY `pembelian_beli_supkode_foreign` (`beli_supkode`);
+
+--
+-- Indexes for table `pembelian_detail`
+--
+ALTER TABLE `pembelian_detail`
+  ADD PRIMARY KEY (`detbeli_id`),
+  ADD KEY `pembelian_detail_detbeli_faktur_foreign` (`detbeli_faktur`),
+  ADD KEY `pembelian_detail_detbeli_kodebarcode_foreign` (`detbeli_kodebarcode`);
 
 --
 -- Indexes for table `penjualan`
 --
 ALTER TABLE `penjualan`
-  ADD PRIMARY KEY (`PenjualanID`);
+  ADD PRIMARY KEY (`jual_faktur`),
+  ADD KEY `penjualan_jual_pelkode_foreign` (`jual_pelkode`);
+
+--
+-- Indexes for table `penjualan_detail`
+--
+ALTER TABLE `penjualan_detail`
+  ADD PRIMARY KEY (`detjual_id`),
+  ADD KEY `penjualan_detail_detjual_faktur_foreign` (`detjual_faktur`),
+  ADD KEY `penjualan_detail_detjual_kodebarcode_foreign` (`detjual_kodebarcode`);
 
 --
 -- Indexes for table `produk`
 --
 ALTER TABLE `produk`
-  ADD PRIMARY KEY (`ProdukID`);
+  ADD PRIMARY KEY (`kodebarcode`),
+  ADD KEY `produk_produk_satid_foreign` (`produk_satid`),
+  ADD KEY `produk_produk_katid_foreign` (`produk_katid`);
+
+--
+-- Indexes for table `satuan`
+--
+ALTER TABLE `satuan`
+  ADD PRIMARY KEY (`satid`);
+
+--
+-- Indexes for table `supplier`
+--
+ALTER TABLE `supplier`
+  ADD PRIMARY KEY (`sup_kode`);
+
+--
+-- Indexes for table `temp_penjualan`
+--
+ALTER TABLE `temp_penjualan`
+  ADD PRIMARY KEY (`detjual_id`);
 
 --
 -- Indexes for table `users`
@@ -484,7 +624,7 @@ ALTER TABLE `auth_groups`
 -- AUTO_INCREMENT for table `auth_logins`
 --
 ALTER TABLE `auth_logins`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `auth_permissions`
@@ -505,40 +645,58 @@ ALTER TABLE `auth_tokens`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `detailpenjualan`
+-- AUTO_INCREMENT for table `kategori`
 --
-ALTER TABLE `detailpenjualan`
-  MODIFY `DetailID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `kategori`
+  MODIFY `katid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `PelangganID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `pel_kode` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `penjualan`
+-- AUTO_INCREMENT for table `pembelian_detail`
 --
-ALTER TABLE `penjualan`
-  MODIFY `PenjualanID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `pembelian_detail`
+  MODIFY `detbeli_id` bigint(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `produk`
+-- AUTO_INCREMENT for table `penjualan_detail`
 --
-ALTER TABLE `produk`
-  MODIFY `ProdukID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `penjualan_detail`
+  MODIFY `detjual_id` bigint(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `satuan`
+--
+ALTER TABLE `satuan`
+  MODIFY `satid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `supplier`
+--
+ALTER TABLE `supplier`
+  MODIFY `sup_kode` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `temp_penjualan`
+--
+ALTER TABLE `temp_penjualan`
+  MODIFY `detjual_id` bigint(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables
@@ -570,6 +728,39 @@ ALTER TABLE `auth_tokens`
 ALTER TABLE `auth_users_permissions`
   ADD CONSTRAINT `auth_users_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `auth_permissions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `auth_users_permissions_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `pembelian`
+--
+ALTER TABLE `pembelian`
+  ADD CONSTRAINT `pembelian_beli_supkode_foreign` FOREIGN KEY (`beli_supkode`) REFERENCES `supplier` (`sup_kode`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `pembelian_detail`
+--
+ALTER TABLE `pembelian_detail`
+  ADD CONSTRAINT `pembelian_detail_detbeli_faktur_foreign` FOREIGN KEY (`detbeli_faktur`) REFERENCES `pembelian` (`beli_faktur`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `pembelian_detail_detbeli_kodebarcode_foreign` FOREIGN KEY (`detbeli_kodebarcode`) REFERENCES `produk` (`kodebarcode`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `penjualan`
+--
+ALTER TABLE `penjualan`
+  ADD CONSTRAINT `penjualan_jual_pelkode_foreign` FOREIGN KEY (`jual_pelkode`) REFERENCES `pelanggan` (`pel_kode`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `penjualan_detail`
+--
+ALTER TABLE `penjualan_detail`
+  ADD CONSTRAINT `penjualan_detail_detjual_faktur_foreign` FOREIGN KEY (`detjual_faktur`) REFERENCES `penjualan` (`jual_faktur`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `penjualan_detail_detjual_kodebarcode_foreign` FOREIGN KEY (`detjual_kodebarcode`) REFERENCES `produk` (`kodebarcode`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `produk`
+--
+ALTER TABLE `produk`
+  ADD CONSTRAINT `produk_produk_katid_foreign` FOREIGN KEY (`produk_katid`) REFERENCES `kategori` (`katid`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `produk_produk_satid_foreign` FOREIGN KEY (`produk_satid`) REFERENCES `satuan` (`satid`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
