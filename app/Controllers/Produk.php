@@ -60,7 +60,7 @@ class Produk extends BaseController
         }
     }
 
-    function simpandata()
+    public function simpandata()
     {
         if ($this->request->isAJAX()) {
             $kodebarcode = $this->request->getVar('kodebarcode');
