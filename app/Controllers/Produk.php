@@ -14,17 +14,31 @@ class Produk extends BaseController
         $this->kategori = new ModelKategori();
         $this->satuan = new Modelsatuan();
     }
+    
     public function index()
     {
-        $noHalaman = $this->request->getVar('page_kategori') ? $this->request->getVar('page_kategori') : 1;
+        $tombolCari = $this->request->getPost('tombolcariproduk');
+
+        if (isset($tombolCari)) {
+            $cari = $this->request->getPost('cariproduk');
+            session()->set('cariproduk', $cari);
+            redirect()->to('/produk/index');
+        } else {
+            $cari = session()->get('cariproduk');
+        }
+
+        $dataProduk = $cari ? $this->produk->cariData($cari) : $this->produk->join('kategori', 'katid=produk_katid')->join('satuan', 'satid=produk_satid');
+
+        $noHalaman = $this->request->getVar('page_produk') ? $this->request->getVar('page_produk') : 1;
         $data = [
-            'datakategori' => $this->kategori->paginate(2, 'kategori'),
-            'pager' => $this->kategori->pager,
+            'dataproduk' => $dataProduk->paginate(5, 'produk'),
+            'pager' => $this->produk->pager,
             'nohalaman' => $noHalaman
         ];
 
         return view('/kasir/produk/data', $data);
     }
+
 
     public function add()
     {
