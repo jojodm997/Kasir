@@ -13,9 +13,21 @@ class Kategori extends BaseController
 
     public function index()
     {
+        $tombolCari = $this->request->getPost('tombolkategori');
+
+        if (isset($tombolCari)) {
+            $cari = $this->request->getPost('carikategori');
+            session()->set('carikategori', $cari);
+            redirect()->to('/kategori/index');
+        } else {
+            $cari = session()->get('carikategori');
+        }
+
+        $dataKategori = $cari ? $this->kategori->cariData($cari) : $this->kategori;
+
         $noHalaman = $this->request->getVar('page_kategori') ? $this->request->getVar('page_kategori') : 1;
         $data = [
-            'datakategori' => $this->kategori->paginate(2, 'kategori'),
+            'datakategori' => $dataKategori->paginate(2, 'kategori'),
             'pager' => $this->kategori->pager,
             'nohalaman' => $noHalaman
         ];

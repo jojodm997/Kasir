@@ -16,7 +16,14 @@ class Produk extends BaseController
     }
     public function index()
     {
-        return view('kasir/produk/data');
+        $noHalaman = $this->request->getVar('page_kategori') ? $this->request->getVar('page_kategori') : 1;
+        $data = [
+            'datakategori' => $this->kategori->paginate(2, 'kategori'),
+            'pager' => $this->kategori->pager,
+            'nohalaman' => $noHalaman
+        ];
+
+        return view('/kasir/produk/data', $data);
     }
 
     public function add()

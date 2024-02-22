@@ -54,6 +54,21 @@
                    </div>
                  </div>
                  <div class="card-body px-0 py-0">
+                   <form method="POST" action="/kategori/index">
+                     <?= csrf_field(); ?>
+                     <div class="input-group mb-3">
+                       <input type="text" class="form-control" placeholder="Cari Kategori" name="carikategori" autofocus>
+                       <button type="submit" name="tombolkategori" class="btn btn-dark btn-icon d-flex align-items-center">
+                         <span class="btn-inner--icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="d-block me-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                           </svg>
+                         </span>
+                         <span class="btn-inner--text">Cari</span>
+                       </button>
+                     </div>
+                   </form>
+
                    <div class="table-responsive p-0">
                      <table class="table align-items-center justify-content-center mb-0">
                        <thead class="bg-gray-100">
@@ -150,38 +165,6 @@
                </div>
              </div>
            </div>
-           <footer class="footer pt-3">
-             <div class="container-fluid">
-               <div class="row align-items-center justify-content-lg-between">
-                 <div class="col-lg-6 mb-lg-0 mb-4">
-                   <div class="copyright text-center text-xs text-muted text-lg-start">
-                     Copyright ©
-                     <script>
-                       document.write(new Date().getFullYear());
-                     </script>
-                     Corporate UI by
-                     <a href="https://www.creative-tim.com" class="text-secondary" target="_blank">Creative Tim</a>.
-                   </div>
-                 </div>
-                 <div class="col-lg-6">
-                   <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                     <li class="nav-item">
-                       <a href="https://www.creative-tim.com" class="nav-link text-xs text-muted" target="_blank">Creative Tim</a>
-                     </li>
-                     <li class="nav-item">
-                       <a href="https://www.creative-tim.com/presentation" class="nav-link text-xs text-muted" target="_blank">About Us</a>
-                     </li>
-                     <li class="nav-item">
-                       <a href="https://www.creative-tim.com/blog" class="nav-link text-xs text-muted" target="_blank">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                       <a href="https://www.creative-tim.com/license" class="nav-link text-xs pe-0 text-muted" target="_blank">License</a>
-                     </li>
-                   </ul>
-                 </div>
-               </div>
-             </div>
-           </footer>
          </div>
          <div class="viewmodal" style="display: none;"></div>
          <script>
