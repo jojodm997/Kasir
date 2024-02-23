@@ -30,4 +30,22 @@ class Penjualan extends BaseController
         $msg = ['fakturpenjualan' => $fakturPenjualan];
         echo json_encode($msg);
     }
+
+    public function dataDetail()
+    {
+        $nofaktur = $this->request->getPost('nofaktur');
+
+        $tempPenjualan = $this->db->table('temp_penjualan');
+        $queryTampil = $tempPenjualan->select('detjual_id as id, detjual_kodebarcode as kode, namaproduk,detjual_hargajual as hargajual, detjual_jml as qty,detjual_subtotal as subtotal')->join('produk', 'detjual_kodebarcode=kodebarcode')->where('detjual_faktur', $nofaktur)->orderBy('detjual_id', 'asc');
+
+        $data = [
+            'datadetail' => $queryTampil->get()
+        ];
+
+        $msg = [
+            'data' => view('kasir/penjualan/viewdetail', $data)
+        ];
+
+        echo json_encode($msg);
+    }
 }
