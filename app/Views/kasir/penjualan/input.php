@@ -59,7 +59,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="nofaktur">Faktur</label>
-                                        <input type="text" class="form-control form-control-sm" style="color:red;font-weight:bold;" name="nofaktur" id="nofaktur" readonly>
+                                        <input type="text" class="form-control form-control-sm" style="color:red;font-weight:bold;" name="nofaktur" id="nofaktur" readonly value="<?= $nofaktur ?>">
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -97,22 +97,28 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="kodebarcode">Kode Produk</label>
                                         <input type="text" class="form-control form-control-sm" name="kodebarcode" id="kodebarcode" autofocus>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="">Nama Produk</label>
+                                        <input type="text" class="form-control form-control-sm" name="namaproduk" id="namaproduk" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="jml">Jumlah</label>
                                         <input type="number" class="form-control form-control-sm" name="jumlah" id="jumlah" value="1">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="jml">Total Bayar</label>
-                                        <input type="text" class="form-control form-control-lg" name="totalbayar" id="totalbayar" style="text-align: right; color:blue; font-weight : bold; font-size:30pt;" value="0" readonly>
+                                        <input type="text" class="form-control form-control-lg" name="totalbayar" id="totalbayar" value="0" readonly>
                                     </div>
                                 </div>
                             </div>
@@ -130,77 +136,22 @@
 
     </div>
     <div class="viewmodal" style="display: none;"></div>
-    <script>
-        function hapus(kode, nama) {
-            Swal.fire({
-                html: `Yakin hapus data produk dengan nama <strong>${nama}</strong> ini ?`,
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Yes, hapus",
-                cancelButtonText: "Tidak"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    $.ajax({
-                        type: "post",
-                        url: "<?= site_url('produk/hapus') ?>",
-                        data: {
-                            kode: kode
-                        },
-                        dataType: "json",
-                        success: function(response) {
-                            if (response.sukses) {
-                                Swal.fire({
-                                    icon: "success",
-                                    title: "Berhasil",
-                                    text: "response.sukses",
-                                }).then((result) => {
-                                    if (result.isConfirmed) {
-                                        window.location.reload();
-                                    }
-
-                                })
-
-                            }
-                        },
-
-                    });
-                }
-            })
-        }
-    </script>
-
-
-
 
 
     <script>
         $(document).ready(function() {
-            buatFaktur();
+
             $('body').addClass('sidenav-collapse-main');
 
             dataDetailPenjualan();
-        });
 
-        function buatFaktur() {
-            $.ajax({
-                type: "POST", // Change "method" to "POST" if that's what you meant
-                url: "<?= site_url('penjualan/buatFaktur') ?>",
-                data: {
-                    tanggal: $('#tanggal').val()
-                },
-                dataType: "json",
-                success: function(response) {
-                    if (response.fakturpenjualan) {
-                        $('#nofaktur').val(response.fakturpenjualan); // Corrected typo
-                    }
-                },
-                error: function(xhr, thrownError) {
-                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+            $('#kodebarcode').keydown(function(e) {
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    cekKode();
                 }
             });
-        }
+        });
 
         function dataDetailPenjualan() {
             $.ajax({
@@ -225,6 +176,27 @@
                     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
                 }
             });
+        }
+
+        function cekKode() {
+            let kode = $('#kodebarcode').val();
+
+            if (kode.length == 0) {
+                $.ajax({
+                    url: "<?= site_url('penjualan/viewDataProduk') ?>",
+                    dataType: "json",
+                    success: function(response) {
+                        $('.viewmodal').html(response.viewmodal).show();
+                        $('#modalproduk').modal('show');
+
+                    },
+                    error: function(xhr, thrownError) {
+                        alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                    }
+                });
+            } else {
+                alert('ada');
+            }
         }
     </script>
 
