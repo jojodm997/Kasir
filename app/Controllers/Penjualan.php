@@ -56,9 +56,13 @@ class Penjualan extends BaseController
 
     public function viewDataProduk()
     {
+        $keyword = $this->request->getPost('keyword');
+        $data = [
+            'keyword' => $keyword
+        ];
         if ($this->request->isAJAX()) {
             $msg = [
-                'viewmodal' => view('kasir/penjualan/viewmodalcariproduk')
+                'viewmodal' => view('kasir/penjualan/viewmodalcariproduk', $data)
             ];
             echo json_encode($msg);
         }
@@ -93,6 +97,31 @@ class Penjualan extends BaseController
                 ];
                 echo json_encode($output);
             }
+        }
+    }
+
+    public function simpanTemp()
+    {
+        if ($this->request->isAJAX()) {
+            $kodebarcode = $this->request->getPost('kodebarcode');
+            $namaproduk = $this->request->getPost('namaproduk');
+            $jumlah = $this->request->getPost('jumlah');
+            $nofaktur = $this->request->getPost('nofaktur');
+
+            $queryCekProduk = $this->db->table('produk')->like('kodebarcode', $kodebarcode)->orlike('namaproduk', $kodebarcode)->get();
+
+            $totalData = $queryCekProduk->getNumRows();
+
+            if ($totalData > 1) {
+                $msg = [
+                    'totaldata' => 'banyak'
+                ];
+            } else {
+                $msg = [
+                    'totaldata' => 'satu'
+                ];
+            }
+            echo json_encode($msg);
         }
     }
 }

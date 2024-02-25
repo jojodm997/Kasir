@@ -18,6 +18,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+                <input type="text" name="keywordkode" id="keywordkode" value="<?= $keyword ?>">
                 <table id="dataproduk" class="table table-bordered table-striped dataTable dtr-inline collapsed" role="grid">
                     <thead>
                         <tr>
