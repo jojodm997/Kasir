@@ -144,6 +144,7 @@
             $('body').addClass('sidenav-collapse-main');
 
             dataDetailPenjualan();
+            hitungTotalBayar();
 
             $('#kodebarcode').keydown(function(e) {
                 if (e.keyCode == 13) {
@@ -228,6 +229,17 @@
 
                         if (response.sukses == 'berhasil') {
                             dataDetailPenjualan();
+                            kosong();
+                        }
+
+                        if (response.error) {
+                            Swal.fire({
+                                title: "Error..",
+                                icon: "error",
+                                html: response.error
+                            });
+                            dataDetailPenjualan();
+                            kosong();
                         }
 
                     },
@@ -238,6 +250,36 @@
             }
 
 
+        }
+
+        function kosong() {
+            $('#kodebarcode').val('');
+            $('#namaproduk').val('');
+            $('#jumlah').val('1');
+            $('#kodebarcode').focus('');
+
+            hitungTotalBayar();
+
+        }
+
+        function hitungTotalBayar() {
+            $.ajax({
+                url: "<?= site_url('penjualan/hitungTotalBayar') ?>",
+                dataType: "json",
+                data: {
+                    nofaktur: $('#nofaktur').val()
+                },
+                type: "post",
+                success: function(response) {
+                    if (response.totalbayar) {
+                        $('#totalbayar').val(response.totalbayar);
+                    }
+
+                },
+                error: function(xhr, thrownError) {
+                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                }
+            });
         }
     </script>
 

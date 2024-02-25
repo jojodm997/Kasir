@@ -115,9 +115,6 @@ class Penjualan extends BaseController
             } else {
                 $queryCekProduk = $this->db->table('produk')->like('kodebarcode', $kodebarcode)->orlike('namaproduk', $kodebarcode)->get();
             }
-
-            $queryCekProduk = $this->db->table('produk')->like('kodebarcode', $kodebarcode)->orlike('namaproduk', $kodebarcode)->get();
-
             $totalData = $queryCekProduk->getNumRows();
 
             if ($totalData > 1) {
@@ -128,19 +125,47 @@ class Penjualan extends BaseController
                 $tblTempPenjualan = $this->db->table('temp_penjualan');
                 $rowProduk = $queryCekProduk->getRowArray();
 
-                $insertData = [
-                    'detjual_faktur' => $nofaktur,
-                    'detjual_kodebarcode' => $rowProduk['kodebarcode'],
-                    'detjual_hargabeli' => $rowProduk['harga_beli'],
-                    'detjual_hargajual' => $rowProduk['harga_jual'],
-                    'detjual_jml' => $jumlah,
-                    'detjual_subtotal' => floatval($rowProduk['harga_jual']) * $jumlah
-                ];
+                $stokProduk = $rowProduk['stok_tersedia'];
 
-                $tblTempPenjualan->insert($insertData);
+                if (intval($stokProduk) == 0) {
+                    $msg = [
+                        'error' => 'Maaf Stok tidak mencukupi'
+                    ];
+                } else {
+                    $insertData = [
+                        'detjual_faktur' => $nofaktur,
+                        'detjual_kodebarcode' => $rowProduk['kodebarcode'],
+                        'detjual_hargabeli' => $rowProduk['harga_beli'],
+                        'detjual_hargajual' => $rowProduk['harga_jual'],
+                        'detjual_jml' => $jumlah,
+                        'detjual_subtotal' => floatval($rowProduk['harga_jual']) * $jumlah
 
-                $msg = ['sukses' => 'berhasil'];
+
+
+                    ];
+
+                    $tblTempPenjualan->insert($insertData);
+
+                    $msg = ['sukses' => 'berhasil'];
+                }
             }
+            echo json_encode($msg);
+        }
+    }
+
+    public function hitungTotalBayar()
+    {
+        if ($this->request->isAJAX()) {
+            $nofaktur = $this->request->getPost('nofaktur');
+
+            $tblTempPenjualan = $this->db->table('temp_penjualan');
+
+            $queryTotal =  $tblTempPenjualan->select('SUM(detjual_subtotal) as totalbayar')->where('detjual_faktur', $nofaktur)->get();
+            $rowTotal = $queryTotal->getRowArray();
+
+            $msg = [
+                'totalbayar' => number_format($rowTotal['totalbayar'], 0, ",", ".")
+            ];
             echo json_encode($msg);
         }
     }
