@@ -131,6 +131,10 @@ class Penjualan extends BaseController
                     $msg = [
                         'error' => 'Maaf Stok tidak mencukupi'
                     ];
+                } else if ($jumlah > intval($stokProduk)) {
+                    $msg = [
+                        'error' => 'Maaf stok tidak mencukupi'
+                    ];
                 } else {
                     $insertData = [
                         'detjual_faktur' => $nofaktur,
@@ -167,6 +171,22 @@ class Penjualan extends BaseController
                 'totalbayar' => number_format($rowTotal['totalbayar'], 0, ",", ".")
             ];
             echo json_encode($msg);
+        }
+    }
+
+    public function hapusItem()
+    {
+        if ($this->request->isAJAX()) {
+            $id = $this->request->getPost('id');
+            $tblTempPenjualan = $this->db->table('temp_penjualan');
+            $queryHapus = $tblTempPenjualan->delete(['detjual_id' => $id]);
+
+            if ($queryHapus) {
+                $msg = [
+                    'sukses' => 'berhasil'
+                ];
+                echo json_encode($msg);
+            }
         }
     }
 }
