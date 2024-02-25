@@ -2,6 +2,9 @@
 // changes
 namespace App\Controllers;
 
+use App\Models\Modeldataproduk;
+use Config\Services;
+
 class Penjualan extends BaseController
 {
     public function index()
@@ -11,7 +14,10 @@ class Penjualan extends BaseController
 
     public function input()
     {
-        return view('kasir/penjualan/input');
+        $data = [
+            'nofaktur' => $this->buatFaktur()
+        ];
+        return view('kasir/penjualan/input', $data);
     }
 
     public function buatFaktur()
@@ -27,8 +33,7 @@ class Penjualan extends BaseController
 
         $fakturPenjualan = 'J' . date('dmy', strtotime($tgl)) . sprintf('%04s', $nextNoUrut);
 
-        $msg = ['fakturpenjualan' => $fakturPenjualan];
-        echo json_encode($msg);
+        return $fakturPenjualan;
     }
 
     public function dataDetail()
@@ -47,5 +52,47 @@ class Penjualan extends BaseController
         ];
 
         echo json_encode($msg);
+    }
+
+    public function viewDataProduk()
+    {
+        if ($this->request->isAJAX()) {
+            $msg = [
+                'viewmodal' => view('kasir/penjualan/viewmodalcariproduk')
+            ];
+            echo json_encode($msg);
+        }
+    }
+
+    public function listDataProduk()
+    {
+        if ($this->request->isAJAX()) {
+            $request = Services::request();
+            $modelProduk = new Modeldataproduk($request);
+            if ($request->getMethod(true) == 'POST') {
+                $lists = $modelProduk->get_datatables();
+                $data = [];
+                $no = $request->getPost("start");
+                foreach ($lists as $list) {
+                    $no++;
+                    $row = [];
+                    $row[] = $no;
+                    $row[] = $list->kodebarcode;
+                    $row[] = $list->namaproduk;
+                    $row[] = $list->katnama;
+                    $row[] = number_format($list->stok_tersedia, 0, ",", ".");
+                    $row[] = number_format($list->harga_jual, 0, ",", ".");
+                    $row[] = "<button type=\"button\" class=\"btn btn-sm btn-primary\" onclick=\"pilihitem('" . $list->kodebarcode . "','" . $list->namaproduk . "') \">Pilih</button>";
+                    $data[] = $row;
+                }
+                $output = [
+                    "draw" => $request->getPost('draw'),
+                    "recordsTotal" => $modelProduk->count_all(),
+                    "recordsFiltered" => $modelProduk->count_filtered(),
+                    "data" => $data
+                ];
+                echo json_encode($output);
+            }
+        }
     }
 }
