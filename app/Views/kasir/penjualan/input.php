@@ -226,12 +226,18 @@
                             });
                         }
 
+                        if (response.sukses == 'berhasil') {
+                            dataDetailPenjualan();
+                        }
+
                     },
                     error: function(xhr, thrownError) {
                         alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
                     }
                 });
             }
+
+
         }
     </script>
 

@@ -56,11 +56,12 @@ class Penjualan extends BaseController
 
     public function viewDataProduk()
     {
-        $keyword = $this->request->getPost('keyword');
-        $data = [
-            'keyword' => $keyword
-        ];
         if ($this->request->isAJAX()) {
+            $keyword = $this->request->getPost('keyword');
+            $data = [
+                'keyword' => $keyword
+            ];
+
             $msg = [
                 'viewmodal' => view('kasir/penjualan/viewmodalcariproduk', $data)
             ];
@@ -71,10 +72,11 @@ class Penjualan extends BaseController
     public function listDataProduk()
     {
         if ($this->request->isAJAX()) {
+            $keywordkode = $this->request->getPost('keywordkode');
             $request = Services::request();
             $modelProduk = new Modeldataproduk($request);
             if ($request->getMethod(true) == 'POST') {
-                $lists = $modelProduk->get_datatables();
+                $lists = $modelProduk->get_datatables($keywordkode);
                 $data = [];
                 $no = $request->getPost("start");
                 foreach ($lists as $list) {
@@ -91,8 +93,8 @@ class Penjualan extends BaseController
                 }
                 $output = [
                     "draw" => $request->getPost('draw'),
-                    "recordsTotal" => $modelProduk->count_all(),
-                    "recordsFiltered" => $modelProduk->count_filtered(),
+                    "recordsTotal" => $modelProduk->count_all($keywordkode),
+                    "recordsFiltered" => $modelProduk->count_filtered($keywordkode),
                     "data" => $data
                 ];
                 echo json_encode($output);
@@ -108,6 +110,12 @@ class Penjualan extends BaseController
             $jumlah = $this->request->getPost('jumlah');
             $nofaktur = $this->request->getPost('nofaktur');
 
+            if (strlen($namaproduk) > 0) {
+                $queryCekProduk = $this->db->table('produk')->where('kodebarcode', $kodebarcode)->where('namaproduk', $namaproduk)->get();
+            } else {
+                $queryCekProduk = $this->db->table('produk')->like('kodebarcode', $kodebarcode)->orlike('namaproduk', $kodebarcode)->get();
+            }
+
             $queryCekProduk = $this->db->table('produk')->like('kodebarcode', $kodebarcode)->orlike('namaproduk', $kodebarcode)->get();
 
             $totalData = $queryCekProduk->getNumRows();
@@ -117,9 +125,21 @@ class Penjualan extends BaseController
                     'totaldata' => 'banyak'
                 ];
             } else {
-                $msg = [
-                    'totaldata' => 'satu'
+                $tblTempPenjualan = $this->db->table('temp_penjualan');
+                $rowProduk = $queryCekProduk->getRowArray();
+
+                $insertData = [
+                    'detjual_faktur' => $nofaktur,
+                    'detjual_kodebarcode' => $rowProduk['kodebarcode'],
+                    'detjual_hargabeli' => $rowProduk['harga_beli'],
+                    'detjual_hargajual' => $rowProduk['harga_jual'],
+                    'detjual_jml' => $jumlah,
+                    'detjual_subtotal' => floatval($rowProduk['harga_jual']) * $jumlah
                 ];
+
+                $tblTempPenjualan->insert($insertData);
+
+                $msg = ['sukses' => 'berhasil'];
             }
             echo json_encode($msg);
         }

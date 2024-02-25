@@ -23,9 +23,13 @@ class Modeldataproduk extends Model
         $this->request = $request;
     }
 
-    private function _get_datatables_query()
+    private function _get_datatables_query($keywordkode)
     {
-        $this->dt = $this->db->table($this->table)->join('kategori', 'katid=produk_katid');
+        if (strlen($keywordkode) == 0) {
+            $this->dt =  $this->db->table($this->table)->join('kategori', 'katid=produk_katid');
+        } else {
+            $this->dt =  $this->db->table($this->table)->join('kategori', 'katid=produk_katid')->like('kodebarcode', $keywordkode)->orLike('namaproduk', $keywordkode);
+        }
         $i = 0;
         foreach ($this->column_search as $item) {
             if ($this->request->getPost('search')['value']) {
@@ -49,24 +53,29 @@ class Modeldataproduk extends Model
         }
     }
 
-    function get_datatables()
+    function get_datatables($keywordkode)
     {
-        $this->_get_datatables_query();
+        $this->_get_datatables_query($keywordkode);
         if ($this->request->getPost('length') != -1)
             $this->dt->limit($this->request->getPost('length'), $this->request->getPost('start'));
         $query = $this->dt->get();
         return $query->getResult();
     }
 
-    function count_filtered()
+    function count_filtered($keywordkode)
     {
-        $this->_get_datatables_query();
+        $this->_get_datatables_query($keywordkode);
         return $this->dt->countAllResults();
     }
 
-    public function count_all()
+    public function count_all($keywordkode)
     {
-        $tbl_storage = $this->db->table($this->table)->join('kategori', 'katid=produk_katid');
+        if (strlen($keywordkode) == 0) {
+            $tbl_storage = $this->db->table($this->table)->join('kategori', 'katid=produk_katid');
+        } else {
+            $tbl_storage = $this->db->table($this->table)->join('kategori', 'katid=produk_katid')->like('kodebarcode', $keywordkode)->orLike('namaproduk', $keywordkode);
+        }
+
         return $tbl_storage->countAllResults();
     }
 }
