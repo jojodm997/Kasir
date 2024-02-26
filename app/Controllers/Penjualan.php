@@ -231,8 +231,8 @@ class Penjualan extends BaseController
                 $msg = [
                     'error' => 'Maaf itemnya belum ada'
                 ];
-                echo json_encode($msg);
             }
+            echo json_encode($msg);
         }
     }
 }
