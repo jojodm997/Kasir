@@ -138,29 +138,10 @@
                         $('.tombolSimpan').html('<i class="spinner-border" role="status"></i>')
                     },
                     complete: function() {
-                        $('.tombolSimpan').prop('disabled', false);
+                        $('.tombolSimpan').prop('disabled', true);
                         $('.tombolSimpan').html('Simpan')
                     },
                     success: function(response) {
-                        if (response.sukses == 'berhasil') {
-                            Swal.fire({
-                                title: "Cetak Struk?",
-                                text: "Mau di Cetak Struk Nya?!",
-                                icon: "warning",
-                                showCancelButton: true,
-                                confirmButtonColor: "#3085d6",
-                                cancelButtonColor: "#d33",
-                                confirmButtonText: "Yes, Cetak!",
-                                cancelButtonText: "Tidak"
-                            }).then((result) => {
-                                if (result.isConfirmed) {
-                                    alert('cetak struk');
-                                    window.location.reload();
-                                } else {
-                                    window.location.reload();
-                                }
-                            });
-                        }
 
                     },
                     error: function(xhr, thrownError) {

@@ -218,10 +218,14 @@ class Penjualan extends BaseController
             $tblTempPenjualan = $this->db->table('temp_penjualan');
             $cekDataTempPenjualan = $tblTempPenjualan->getWhere(['detjual_faktur' => $nofaktur]);
 
+            $queryTotal =  $tblTempPenjualan->select('SUM(detjual_subtotal) as totalbayar')->where('detjual_faktur', $nofaktur)->get();
+            $rowTotal = $queryTotal->getRowArray();
+
             if ($cekDataTempPenjualan->getNumRows() > 0) {
                 $data = [
                     'nofaktur' => $nofaktur,
-                    'kopel' => $kopel
+                    'kopel' => $kopel,
+                    'totalbayar' => $rowTotal['totalbayar']
                 ];
 
                 $msg = [
@@ -232,6 +236,62 @@ class Penjualan extends BaseController
                     'error' => 'Maaf itemnya belum ada'
                 ];
             }
+            echo json_encode($msg);
+        }
+    }
+
+    public function simpanPembayaran()
+    {
+        if ($this->request->isAJAX()) {
+            $nofaktur = $this->request->getPost('nofaktur');
+            $kopel = $this->request->getPost('kopel');
+            $totalkotor = $this->request->getPost('totalkotor');
+            $totalbersih = str_replace(",", "", $this->request->getPost('totalbersih'));
+            $dispersen = str_replace(",", "", $this->request->getPost('dispersen'));
+            $disuang = str_replace(",", "", $this->request->getPost('disuang'));
+            $jmluang = str_replace(",", "", $this->request->getPost('jmluang'));
+            $sisauang = str_replace(",", "", $this->request->getPost('sisauang'));
+
+            $tblPenjualan = $this->db->table('penjualan');
+            $tblTempPenjualan = $this->db->table('temp_penjualan');
+            $tblDetailPenjualan = $this->db->table('penjualan_detail');
+
+            $dataInsertPenjualan = [
+                'jual_faktur' => $nofaktur,
+                'jual_tgl' => date('Y-m-d H:i:s'),
+                'jual_pelkode' => $kopel,
+                'jual_dispersen' => $dispersen,
+                'jual_disuang' => $disuang,
+                'jual_totalkotor' => $totalkotor,
+                'jual_totalbersih' => $totalbersih,
+                'jual_jmluang' => $jmluang,
+                'jual_sisauang' => $sisauang,
+            ];
+
+            $tblPenjualan->insert($dataInsertPenjualan);
+
+            $ambilDataTemp = $tblTempPenjualan->getWhere(['detjual_faktur' => $nofaktur]);
+
+            $fieldDetailPenjualan = [];
+            foreach ($ambilDataTemp->getResultArray() as $row) {
+                $fieldDetailPenjualan[] = [
+                    'detjual_faktur' => $row['detjual_faktur'],
+                    'detjual_kodebarcode' => $row['detjual_kodebarcode'],
+                    'detjual_hargabeli' => $row['detjual_hargabeli'],
+                    'detjual_hargajual' => $row['detjual_hargajual'],
+                    'detjual_jml' => $row['detjual_jml'],
+                    'detjual_subtotal' => $row['detjual_subtotal'],
+
+                ];
+            }
+
+            $tblDetailPenjualan->insertBatch($fieldDetailPenjualan);
+
+            $tblPenjualan->emptyTable();
+
+            $msg = [
+                'sukses' => 'berhasil'
+            ];
             echo json_encode($msg);
         }
     }
