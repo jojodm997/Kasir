@@ -89,8 +89,8 @@ class Produk extends BaseController
             $stok = str_replace(',', '', $this->request->getVar('stok'));
             $kategori = $this->request->getVar('kategori');
             $satuan = $this->request->getVar('satuan');
-            $hargabeli = str_replace(',', '', $this->request->getVar('harga_beli'));
-            $hargajual = str_replace(',', '', $this->request->getVar('harga_jual'));
+            $hargabeli = str_replace(',', '', $this->request->getVar('hargabeli'));
+            $hargajual = str_replace(',', '', $this->request->getVar('hargajual'));
 
             $validation =  \Config\Services::validation();
 
@@ -183,7 +183,7 @@ class Produk extends BaseController
                     'produk_satid' => $satuan,
                     'produk_katid' => $kategori,
                     'stok_tersedia' => $stok,
-                    'hargab_beli' => $hargabeli,
+                    'harga_beli' => $hargabeli,
                     'harga_jual' => $hargajual,
                     'gambar' => $pathGambar
                 ]);
