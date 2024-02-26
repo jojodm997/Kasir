@@ -189,9 +189,9 @@
                                 }
 
                             },
-                            error: function(xhr, thrownError) {
-                                alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-                            }
+                            // error: function(xhr, thrownError) {
+                            //     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                            // }
                         })
                     }
                 });
@@ -229,19 +229,19 @@
                     }
 
                 },
-                error: function(xhr, thrownError) {
-                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-                }
+                // error: function(xhr, thrownError) {
+                //     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                // }
             });
         }
 
-        function handleAjaxError(xhr, status, error) {
-            console.error("AJAX Error:");
-            console.error("Status:", status);
-            console.error("Error:", error);
-            console.log("Response Text:", xhr.responseText);
-            // You can further customize error handling here, such as displaying a message to the user
-        }
+        // function handleAjaxError(xhr, status, error) {
+        //     console.error("AJAX Error:");
+        //     console.error("Status:", status);
+        //     console.error("Error:", error);
+        //     console.log("Response Text:", xhr.responseText);
+        //     // You can further customize error handling here, such as displaying a message to the user
+        // }
 
         function dataDetailPenjualan() {
             $.ajax({
@@ -262,9 +262,9 @@
                     }
 
                 },
-                error: function(xhr, status, error) {
-                    handleAjaxError(xhr, status, error);
-                }
+                // error: function(xhr, status, error) {
+                //     handleAjaxError(xhr, status, error);
+                // }
             });
         }
 
@@ -280,9 +280,9 @@
                         $('#modalproduk').modal('show');
 
                     },
-                    error: function(xhr, thrownError) {
-                        alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-                    }
+                    // error: function(xhr, thrownError) {
+                    //     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                    // }
                 });
             } else {
                 $.ajax({
@@ -310,9 +310,9 @@
                                     $('#modalproduk').modal('show');
 
                                 },
-                                error: function(xhr, thrownError) {
-                                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-                                }
+                                // error: function(xhr, thrownError) {
+                                //     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                                // }
                             });
                         }
 
@@ -332,9 +332,9 @@
                         }
 
                     },
-                    error: function(xhr, thrownError) {
-                        alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-                    }
+                    // error: function(xhr, thrownError) {
+                    //     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                    // }
                 });
             }
 
@@ -365,9 +365,9 @@
                     }
 
                 },
-                error: function(xhr, thrownError) {
-                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-                }
+                // error: function(xhr, thrownError) {
+                //     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                // }
             });
         }
     </script>

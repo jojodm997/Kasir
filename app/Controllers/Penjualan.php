@@ -33,8 +33,13 @@ class Penjualan extends BaseController
 
         $fakturPenjualan = 'J' . date('dmy', strtotime($tgl)) . sprintf('%04s', $nextNoUrut);
 
+        // Tambahkan detik dan menit
+        $detikMenit = date('is'); // Mengambil detik dan menit saat ini
+        $fakturPenjualan .= $detikMenit;
+
         return $fakturPenjualan;
     }
+
 
     public function dataDetail()
     {
