@@ -225,7 +225,7 @@
 
                     if (response.data) {
                         $('.viewmodalpembayaran').html(response.data).show();
-                        $('#modalpembayaran').moda('show');
+                        $('#modalpembayaran').modal('show');
                     }
 
                 },
