@@ -143,9 +143,6 @@ class Penjualan extends BaseController
                         'detjual_hargajual' => $rowProduk['harga_jual'],
                         'detjual_jml' => $jumlah,
                         'detjual_subtotal' => floatval($rowProduk['harga_jual']) * $jumlah
-
-
-
                     ];
 
                     $tblTempPenjualan->insert($insertData);

@@ -91,9 +91,6 @@
                                     <div class="form-group">
                                         <label for="tanggal">Aksi</label>
                                         <div class="input-group">
-                                            <!-- <button class="btn btn-danger btn-sm" type="button" id="btnHapusTransaksi">
-                                                <i class="fa fa-trash-alt"></i>
-                                            </button>&nbsp; -->
                                             <button type="button" class="btn btn-dark btn-icon px-3 me-2" id="btnHapusTransaksi">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
@@ -190,11 +187,12 @@
                                 if (response.sukses == 'berhasil') {
                                     window.location.reload();
                                 }
+
                             },
                             error: function(xhr, thrownError) {
                                 alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
                             }
-                        });
+                        })
                     }
                 });
             });
@@ -224,10 +222,12 @@
                             text: response.error
                         });
                     }
+
                     if (response.data) {
                         $('.viewmodalpembayaran').html(response.data).show();
-                        $('modalpembayaran').modal('show');
+                        $('#modalpembayaran').moda('show');
                     }
+
                 },
                 error: function(xhr, thrownError) {
                     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
@@ -235,6 +235,13 @@
             });
         }
 
+        function handleAjaxError(xhr, status, error) {
+            console.error("AJAX Error:");
+            console.error("Status:", status);
+            console.error("Error:", error);
+            console.log("Response Text:", xhr.responseText);
+            // You can further customize error handling here, such as displaying a message to the user
+        }
 
         function dataDetailPenjualan() {
             $.ajax({
@@ -255,8 +262,8 @@
                     }
 
                 },
-                error: function(xhr, thrownError) {
-                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                error: function(xhr, status, error) {
+                    handleAjaxError(xhr, status, error);
                 }
             });
         }
