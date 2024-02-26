@@ -103,7 +103,7 @@
 
                                             <button class="btn btn-dark" type="button" id="btnSimpanTransaksi">
                                                 <i class="fa fa-save"></i>
-                                            </button>&nbsp;
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -148,6 +148,7 @@
 
     </div>
     <div class="viewmodal" style="display: none;"></div>
+    <div class="viewmodalpembayaran" style="display: none;"></div>
 
 
     <script>
@@ -164,7 +165,76 @@
                     cekKode();
                 }
             });
+
+            $('#btnHapusTransaksi').click(function(e) {
+                e.preventDefault();
+                Swal.fire({
+                    title: "Batal Transaksi ?",
+                    text: "Yakin Batal Transaksi ?",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Ya Batal",
+                    cancelButtonText: 'Tidak'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        $.ajax({
+                            type: "post",
+                            url: "<?= site_url('penjualan/batalTransaksi') ?>",
+                            data: {
+                                nofaktur: $('#nofaktur').val()
+                            },
+                            dataType: "json",
+                            success: function(response) {
+                                if (response.sukses == 'berhasil') {
+                                    window.location.reload();
+                                }
+                            },
+                            error: function(xhr, thrownError) {
+                                alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                            }
+                        });
+                    }
+                });
+            });
+            $('#btnSimpanTransaksi').click(function(e) {
+                e.preventDefault();
+                pembayaran();
+
+            });
         });
+
+        function pembayaran() {
+            let nofaktur = $('#nofaktur').val();
+            $.ajax({
+                type: "post",
+                url: "<?= site_url('penjualan/pembayaran') ?>",
+                data: {
+                    nofaktur: nofaktur,
+                    tglfaktur: $('#tanggal').val(),
+                    kopel: $('#kopel').val() // Make sure to get the value correctly
+                },
+                dataType: "json",
+                success: function(response) {
+                    if (response.error) {
+                        Swal.fire({
+                            icon: "warning",
+                            title: "Maaf...",
+                            text: response.error
+                        });
+                    }
+                    if (response.data) {
+                        $('.viewmodalpembayaran').html(response.data).show();
+                        $('modalpembayaran').modal('show');
+                    }
+                },
+                error: function(xhr, thrownError) {
+                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                }
+            });
+        }
+
 
         function dataDetailPenjualan() {
             $.ajax({

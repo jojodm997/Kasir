@@ -121,7 +121,7 @@ class Penjualan extends BaseController
                 $msg = [
                     'totaldata' => 'banyak'
                 ];
-            } else {
+            } else if ($totalData == 1) {
                 $tblTempPenjualan = $this->db->table('temp_penjualan');
                 $rowProduk = $queryCekProduk->getRowArray();
 
@@ -152,7 +152,10 @@ class Penjualan extends BaseController
 
                     $msg = ['sukses' => 'berhasil'];
                 }
+            } else {
+                $msg = ['error' => 'Maaf produk tidak ditemukan'];
             }
+
             echo json_encode($msg);
         }
     }
@@ -184,6 +187,52 @@ class Penjualan extends BaseController
             if ($queryHapus) {
                 $msg = [
                     'sukses' => 'berhasil'
+                ];
+                echo json_encode($msg);
+            }
+        }
+    }
+
+    public function batalTransaksi()
+    {
+        if ($this->request->isAJAX()) {
+            $nofaktur = $this->request->getPost('nofaktur');
+
+            $tblTempPenjualan = $this->db->table('temp_penjualan');
+            $hapusData = $tblTempPenjualan->emptyTable();
+
+            if ($hapusData) {
+                $msg = [
+                    'sukses' => 'berhasil'
+                ];
+            }
+
+            echo json_encode($msg);
+        }
+    }
+
+    public function pembayaran()
+    {
+        if ($this->request->isAJAX()) {
+            $nofaktur = $this->request->getPost('nofaktur');
+            $tglfaktur = $this->request->getPost('tglfaktur');
+            $kopel = $this->request->getPost('kopel');
+
+            $tblTempPenjualan = $this->db->table('temp_penjualan');
+            $cekDataTempPenjualan = $tblTempPenjualan->getWhere(['detjual_faktur' => $nofaktur]);
+
+            if ($cekDataTempPenjualan->getNumRows() > 0) {
+                $data = [
+                    'nofaktur' => $nofaktur,
+                    'kopel' => $kopel
+                ];
+
+                $msg = [
+                    'data' => view('kasir/penjualan/modalpembayaran', $data)
+                ];
+            } else {
+                $msg = [
+                    'error' => 'Maaf itemnya belum ada'
                 ];
                 echo json_encode($msg);
             }
