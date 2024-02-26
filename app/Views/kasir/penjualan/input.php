@@ -43,16 +43,16 @@
                         <div class="ms-auto d-flex">
                             <div class="input-group input-group-sm ms-auto me-2">
                                 <button type="button" class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0 me-2 tombolTambah " onclick="window.location='<?= site_url('produk/add') ?>'">
-                                    <span class="btn-inner--icon">
-                                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="d-block me-2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                        </svg>
-                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+
                                     <span class="btn-inner--text">Tambah data</span>
                                 </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="card card-default color-palette-box">
                         <div class="card-body">
                             <div class="row">
@@ -75,8 +75,13 @@
                                             <input type="text" value="-" class="form-control form-control-sm" name="napel" id="napel" readonly>
                                             <input type="hidden" name="kopel" id="kopel" value="0">
                                             <div class="input-group-append">
-                                                <button class="btn btn-sm btn-primary" type="button">
+                                                <!-- <button class="btn btn-sm btn-primary" type="button">
                                                     <i class="fa fa-search"></i>
+                                                </button> -->
+                                                <button type="button" class="btn btn-dark btn-icon px-3 me-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="d-block me-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -86,10 +91,17 @@
                                     <div class="form-group">
                                         <label for="tanggal">Aksi</label>
                                         <div class="input-group">
-                                            <button class="btn btn-danger btn-sm" type="button" id="btnHapusTransaksi">
+                                            <!-- <button class="btn btn-danger btn-sm" type="button" id="btnHapusTransaksi">
                                                 <i class="fa fa-trash-alt"></i>
-                                            </button>&nbsp;
-                                            <button class="btn btn-success" type="button" id="btnSimpanTransaksi">
+                                            </button>&nbsp; -->
+                                            <button type="button" class="btn btn-dark btn-icon px-3 me-2" id="btnHapusTransaksi">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                                                </svg>
+                                            </button>
+
+
+                                            <button class="btn btn-dark" type="button" id="btnSimpanTransaksi">
                                                 <i class="fa fa-save"></i>
                                             </button>&nbsp;
                                         </div>
