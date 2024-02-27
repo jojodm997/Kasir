@@ -41,115 +41,61 @@ class Pelanggan extends BaseController
 
     public function add()
     {
-        return view('kasir/produk/formtambah');
+        return view('kasir/pelanggan/formtambah');
     }
 
 
     public function simpandata()
     {
         if ($this->request->isAJAX()) {
-            $kodebarcode = $this->request->getVar('kodebarcode');
-            $namaproduk = $this->request->getVar('namaproduk');
-            $stok = str_replace(',', '', $this->request->getVar('stok'));
-            $kategori = $this->request->getVar('kategori');
-            $satuan = $this->request->getVar('satuan');
-            $hargabeli = str_replace(',', '', $this->request->getVar('hargabeli'));
-            $hargajual = str_replace(',', '', $this->request->getVar('hargajual'));
+            $pel_nama = $this->request->getVar('pel_nama');
+            $pel_alamat = $this->request->getVar('pel_alamat');
+            $pel_telp = $this->request->getVar('pel_telp');
+
+
 
             $validation =  \Config\Services::validation();
 
             $doValid = $this->validate([
-                'kodebarcode' => [
-                    'label' => 'Kode Barcode',
-                    'rules' => 'is_unique[produk.kodebarcode]|required',
+                'pel_nama' => [
+                    'label' => 'Nama Pelanggan',
+                    'rules' => 'is_unique[pelanggan.pel_nama]|required',
                     'errors' => [
-                        'is_unique' => '{field} sudah ada, coba dengan kode yang lain',
+                        'is_unique' => '{field} sudah ada, coba dengan nama yang lain',
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
-                'namaproduk' => [
-                    'label' => 'Nama Produk',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} tidak boleh kosong'
-                    ]
-                ],
-                'stok' => [
-                    'label' => 'Stok Tersedia',
+                'pel_alamat' => [
+                    'label' => 'Alamat',
                     'rules' => 'required',
                     'errors' => [
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
-                'kategori' => [
-                    'label' => 'Kategori',
+                'pel_telp' => [
+                    'label' => 'Nomor Telepon',
                     'rules' => 'required',
                     'errors' => [
-                        'required' => '{field} wajib dipilih'
+                        'required' => '{field} tidak boleh kosong'
                     ]
                 ],
-                'satuan' => [
-                    'label' => 'Satuan',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} wajib dipilih'
-                    ]
-                ],
-                'hargabeli' => [
-                    'label' => 'Harga Beli',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} tidak boleh Kosong',
-                    ]
-                ],
-                'hargajual' => [
-                    'label' => 'Harga Jual',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} tidak boleh Kosong'
-                    ]
-                ],
-                'uploadgambar' => [
-                    'label' => 'Upload Gambar',
-                    'rules' => 'mime_in[uploadgambar,image/png,image/jpg,image/jpeg]|ext_in[uploadgambar,png,jpg,jpeg]|is_image[uploadgambar]',
-                ]
             ]);
+
 
             if (!$doValid) {
                 $msg = [
                     'error' => [
-                        'errorKodeBarcode' => $validation->getError('kodebarcode'),
-                        'errorNamaProduk' => $validation->getError('namaproduk'),
-                        'errorStok' => $validation->getError('stok'),
-                        'errorKategori' => $validation->getError('kategori'),
-                        'errorSatuan' => $validation->getError('satuan'),
-                        'errorHargaBeli' => $validation->getError('hargabeli'),
-                        'errorHargaJual' => $validation->getError('hargajual'),
-                        'errorUpload' => $validation->getError('uploadgambar')
+                        'errorPelNama' => $validation->getError('pel_nama'),
+                        'errorPelAlamat' => $validation->getError('pel_alamat'),
+                        'errorPelTelp' => $validation->getError('pel_telp'),
+
                     ]
                 ];
             } else {
-                $uploadGambar = $_FILES['uploadgambar']['name'];
-
-                if ($uploadGambar != NULL) {
-                    $namaFileGambar = "$kodebarcode-$namaproduk";
-                    $fileGambar = $this->request->getFile('uploadgambar');
-                    $fileGambar->move('assets/upload', $namaFileGambar . '.' . $fileGambar->getExtension());
-
-                    $pathGambar = 'assets/upload/' . $fileGambar->getName();
-                } else {
-                    $pathGambar = '';
-                }
-
-                $this->produk->insert([
-                    'kodebarcode' => $kodebarcode,
-                    'namaproduk' => $namaproduk,
-                    'produk_satid' => $satuan,
-                    'produk_katid' => $kategori,
-                    'stok_tersedia' => $stok,
-                    'harga_beli' => $hargabeli,
-                    'harga_jual' => $hargajual,
-                    'gambar' => $pathGambar
+                $this->pelanggan->insert([
+                    'pel_nama' => $pel_nama,
+                    'pel_alamat' => $pel_alamat,
+                    'pel_telp' => $pel_telp,
                 ]);
 
                 $msg = [
@@ -164,9 +110,9 @@ class Pelanggan extends BaseController
     public function hapus()
     {
         if ($this->request->isAJAX()) {
-            $kodebarcode = $this->request->getPost('kode');
+            $kode_pel = $this->request->getPost('kode');
 
-            $this->produk->delete($kodebarcode);
+            $this->pelanggan->delete($kode_pel);
             $msg = [
                 'sukses' => 'Produk berhasil dihapus'
             ];
@@ -177,23 +123,17 @@ class Pelanggan extends BaseController
 
     public function edit($kode)
     {
-        $row = $this->produk->find($kode);
+        $row = $this->pelanggan->find($kode);
 
         if ($row) {
             $data = [
-                'kode' => $row['kodebarcode'],
-                'nama' => $row['namaproduk'],
-                'stok' => $row['stok_tersedia'],
-                'produkkategori' => $row['produk_katid'],
-                'datakategori' => $this->kategori->findAll(),
-                'produksatuan' => $row['produk_satid'],
-                'datasatuan' => $this->satuan->findAll(),
-                'hargabeli' => $row['harga_beli'],
-                'hargajual' => $row['harga_jual'],
-                'gambarproduk' => $row['gambar']
+
+                'nama' => $row['pel_nama'],
+                'alamat' => $row['pel_alamat'],
+                'telp' => $row['pel_telp'],
 
             ];
-            return view('kasir/produk/formedit', $data);
+            return view('kasir/pelanggan/formedit', $data);
         } else {
             exit('Data Tidak Ditemukan');
         }
@@ -204,88 +144,53 @@ class Pelanggan extends BaseController
     public function updatedata()
     {
         if ($this->request->isAJAX()) {
-            $kodebarcode = $this->request->getVar('kodebarcode');
-            $namaproduk = $this->request->getVar('namaproduk');
-            $stok = str_replace(',', '', $this->request->getVar('stok'));
-            $kategori = $this->request->getVar('kategori');
-            $satuan = $this->request->getVar('satuan');
-            $hargabeli = str_replace(',', '', $this->request->getVar('hargabeli'));
-            $hargajual = str_replace(',', '', $this->request->getVar('hargajual'));
+            $pel_kode = $this->request->getVar('pel_kode');
+            $pel_nama = $this->request->getVar('pel_nama');
+            $pel_alamat = $this->request->getVar('pel_alamat');
+            $pel_telp = $this->request->getVar('pel_telp');
 
             $validation =  \Config\Services::validation();
 
             $doValid = $this->validate([
-
-                'namaproduk' => [
-                    'label' => 'Nama Produk',
+                'pel_nama' => [
+                    'label' => 'Nama Pelanggan',
+                    'rules' => 'is_unique[pelanggan.pel_nama]|required',
+                    'errors' => [
+                        'is_unique' => '{field} sudah ada, coba dengan nama yang lain',
+                        'required' => '{field} tidak boleh kosong'
+                    ]
+                ],
+                'pel_alamat' => [
+                    'label' => 'Alamat',
                     'rules' => 'required',
                     'errors' => [
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
-                'stok' => [
-                    'label' => 'Stok Tersedia',
+                'pel_telp' => [
+                    'label' => 'Nomor Telepon',
                     'rules' => 'required',
                     'errors' => [
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
-                'hargabeli' => [
-                    'label' => 'Harga Beli',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} tidak boleh Kosong',
-                    ]
-                ],
-                'hargajual' => [
-                    'label' => 'Harga Jual',
-                    'rules' => 'required',
-                    'errors' => [
-                        'required' => '{field} tidak boleh Kosong'
-                    ]
-                ],
-                'uploadgambar' => [
-                    'label' => 'Upload Gambar',
-                    'rules' => 'mime_in[uploadgambar,image/png,image/jpg,image/jpeg]|ext_in[uploadgambar,png,jpg,jpeg]|is_image[uploadgambar]',
-                ]
             ]);
 
             if (!$doValid) {
                 $msg = [
                     'error' => [
-
-                        'errorNamaProduk' => $validation->getError('namaproduk'),
-                        'errorStok' => $validation->getError('stok'),
-                        'errorHargaBeli' => $validation->getError('hargabeli'),
-                        'errorHargaJual' => $validation->getError('hargajual'),
-                        'errorUpload' => $validation->getError('uploadgambar')
+                        'errorPelNama' => $validation->getError('pel_nama'),
+                        'errorPelAlamat' => $validation->getError('pel_alamat'),
+                        'errorPelTelp' => $validation->getError('pel_telp'),
                     ]
                 ];
             } else {
-                $uploadGambar = $_FILES['uploadgambar']['name'];
-
-                $rowDataProduk = $this->produk->find($kodebarcode);
-
-                if ($uploadGambar != NULL) {
-                    unlink($rowDataProduk['gambar']);
-                    $namaFileGambar = "$kodebarcode-$namaproduk";
-                    $fileGambar = $this->request->getFile('uploadgambar');
-                    $fileGambar->move('assets/upload', $namaFileGambar . '.' . $fileGambar->getExtension());
-
-                    $pathGambar = 'assets/upload/' . $fileGambar->getName();
-                } else {
-                    $pathGambar = $rowDataProduk['gambar'];
-                }
-
-                $this->produk->update($kodebarcode, [
-                    'namaproduk' => $namaproduk,
-                    'produk_satid' => $satuan,
-                    'produk_katid' => $kategori,
-                    'stok_tersedia' => $stok,
-                    'harga_beli' => $hargabeli,
-                    'harga_jual' => $hargajual,
-                    'gambar' => $pathGambar
+                $this->pelanggan->where('pel_kode', $pel_kode)->update([
+                    'pel_nama' => $pel_nama,
+                    'pel_alamat' => $pel_alamat,
+                    'pel_telp' => $pel_telp,
                 ]);
+
 
                 $msg = [
                     'sukses' => 'Berhasil dieksekusi'
