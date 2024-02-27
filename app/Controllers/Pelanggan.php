@@ -128,6 +128,8 @@ class Pelanggan extends BaseController
         if ($row) {
             $data = [
 
+                'kode' => $row['pel_kode'],
+
                 'nama' => $row['pel_nama'],
                 'alamat' => $row['pel_alamat'],
                 'telp' => $row['pel_telp'],
@@ -179,13 +181,16 @@ class Pelanggan extends BaseController
             if (!$doValid) {
                 $msg = [
                     'error' => [
+                        'errorPelKode' => $validation->getError('pel_kode'),
                         'errorPelNama' => $validation->getError('pel_nama'),
                         'errorPelAlamat' => $validation->getError('pel_alamat'),
                         'errorPelTelp' => $validation->getError('pel_telp'),
                     ]
                 ];
             } else {
-                $this->pelanggan->where('pel_kode', $pel_kode)->update([
+
+
+                $this->pelanggan->update($pel_kode, [
                     'pel_nama' => $pel_nama,
                     'pel_alamat' => $pel_alamat,
                     'pel_telp' => $pel_telp,
