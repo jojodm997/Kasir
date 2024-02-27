@@ -14,6 +14,7 @@
         "ext-intl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
+        "dompdf/dompdf": "^2.0",
         "laminas/laminas-escaper": "^2.9",
         "myth/auth": "^1.2",
         "psr/log": "^1.1"
