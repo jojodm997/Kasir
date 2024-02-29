@@ -76,7 +76,7 @@
                     <h5 class="font-weight-semibold mb-1">Lapora stok produk</h5>
                     <p class="text-sm mb-0">Pick an account plan that fits your workflow.</p>
                   </div>
-                  <a href="<?= site_url('/generate-pdf') ?>" class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0 ms-md-auto" target="_blank">
+                  <a href="<?= site_url('laporan/generatepdf') ?>" class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0 ms-md-auto" target="_blank">
                     <span class="btn-inner--icon">
                       <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="d-block me-2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
