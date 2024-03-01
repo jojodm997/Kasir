@@ -10,13 +10,14 @@
                 <div class="form-group">
                     <label for="">Nama Satuan</label>
                     <input type="text" name="namasatuan" id="namasatuan" class="form-control form-control-sm" required>
+                    <div class="errorSatuan" style="display: none;"></div>
                 </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary tombolSimpan">Simpan</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                <?= form_close(); ?>
             </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary tombolSimpan">Simpan</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-            <?= form_close(); ?>
         </div>
     </div>
 </div>
@@ -50,6 +51,8 @@
                             $('#modaltambahsatuan').modal('hide');
                             tampilSatuan();
                         }
+                    } else if (response.error) {
+                        $('.errorSatuan').html(response.error).show();
                     }
                 },
                 error: function(xhr, thrownError) {

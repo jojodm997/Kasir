@@ -65,6 +65,16 @@ class Satuan extends BaseController
         if ($this->request->isAJAX()) {
             $namasatuan = $this->request->getVar('namasatuan');
 
+            // Cek apakah nama satuan sudah ada di database
+            if ($this->satuan->where('satnama', $namasatuan)->countAllResults() > 0) {
+                $msg = [
+                    'error' => 'Satuan dengan nama tersebut sudah ada.'
+                ];
+                echo json_encode($msg);
+                return;
+            }
+
+            // Jika nama satuan belum ada, lakukan penyimpanan
             $this->satuan->insert([
                 'satnama' => $namasatuan
             ]);
@@ -75,6 +85,7 @@ class Satuan extends BaseController
             echo json_encode($msg);
         }
     }
+
     function hapus()
     {
         if ($this->request->isAJAX()) {
