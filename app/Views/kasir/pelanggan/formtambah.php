@@ -82,9 +82,9 @@
                                </div>
 
                                <div class="form-group">
-                                   <label for="pel_telp">Nomor Telepom</label>
+                                   <label for="pel_telp">Nomor Telepon</label>
                                    <div class="col-sm-6">
-                                       <input type="text" class="form-control" id="pel_telp" name="pel_telp">
+                                       <input type="number" inputmode="numeric" class="form-control" id="pel_telp" name="pel_telp">
                                        <div class="errorPelTelp" style="display: none;">
                                        </div>
                                    </div>

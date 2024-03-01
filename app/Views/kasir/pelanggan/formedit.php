@@ -91,7 +91,7 @@
                                <div class="form-group">
                                    <label for="pel_telp">Nomor Telp</label>
                                    <div class="col-sm-4">
-                                       <input type="text" class="form-control" id="pel_telp" name="pel_telp" value="<?= $telp; ?>">
+                                       <input type="number" inputmode="numeric" class="form-control" id="pel_telp" name="pel_telp" value="<?= $telp; ?>">
                                        <div class="errorPelTelp" style="display: none;">
                                        </div>
                                    </div>
