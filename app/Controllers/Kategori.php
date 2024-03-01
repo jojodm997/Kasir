@@ -13,6 +13,7 @@ class Kategori extends BaseController
 
     public function index()
     {
+
         $tombolCari = $this->request->getPost('tombolkategori');
 
         if (isset($tombolCari)) {
@@ -31,7 +32,6 @@ class Kategori extends BaseController
             'pager' => $this->kategori->pager,
             'nohalaman' => $noHalaman
         ];
-
         return view('/kasir/kategori/data', $data);
     }
 

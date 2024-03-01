@@ -4,11 +4,11 @@ namespace App\Controllers;
 
 class Kasir extends BaseController
 {
-   public function index()
+    public function index()
     {
-        $data = [
+        $datas = [
             'title' => 'Dashbord'
         ];
-        return view('kasir/index', $data);
+        return view('kasir/index', $datas);
     }
 }

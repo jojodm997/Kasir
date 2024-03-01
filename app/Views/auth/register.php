@@ -18,11 +18,10 @@
                                  <div class="my-auto text-start max-width-350 ms-7">
                                    <h1 class="mt-3 text-white font-weight-bolder">
                                      Start your <br />
-                                     new journey.
+                                     journey.
                                    </h1>
                                    <p class="text-white text-lg mt-4 mb-4">
-                                     Use these awesome forms to login or create new account
-                                     in your project for free.
+                                     Create an account for free
                                    </p>
                                    <div class="d-flex align-items-center">
                                      <div class="avatar-group d-flex">
@@ -46,8 +45,7 @@
                                  </div>
                                  <div class="text-start position-absolute fixed-bottom ms-7">
                                    <h6 class="text-white text-sm mb-5">
-                                     Copyright © 2022 Corporate UI Design System by Creative
-                                     Tim.
+                                     Copyright © 2024 jojodm997
                                    </h6>
                                  </div>
                                </div>
