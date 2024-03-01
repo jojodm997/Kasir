@@ -28,7 +28,7 @@ class Kategori extends BaseController
 
         $noHalaman = $this->request->getVar('page_kategori') ? $this->request->getVar('page_kategori') : 1;
         $data = [
-            'datakategori' => $dataKategori->paginate(2, 'kategori'),
+            'datakategori' => $dataKategori->paginate(10, 'kategori'),
             'pager' => $this->kategori->pager,
             'nohalaman' => $noHalaman
         ];
@@ -54,6 +54,18 @@ class Kategori extends BaseController
     {
         if ($this->request->isAJAX()) {
             $namakategori = $this->request->getVar('namakategori');
+
+            // Cek apakah nama kategori sudah ada di dalam database
+            $existingKategori = $this->kategori->where('katnama', $namakategori)->countAllResults();
+            if ($existingKategori > 0) {
+                $msg = [
+                    'error' => 'Nama kategori sudah ada.'
+                ];
+                echo json_encode($msg);
+                return;
+            }
+
+            // Jika nama kategori belum ada di database, lakukan penyimpanan
             $this->kategori->insert([
                 'katnama' => $namakategori
             ]);
@@ -65,12 +77,20 @@ class Kategori extends BaseController
         }
     }
 
+
     function hapus()
     {
         if ($this->request->isAJAX()) {
             $idkategori = $this->request->getVar('idkategori');
 
+            // Nonaktifkan constraint foreign key sementara
+            $this->db->query('SET FOREIGN_KEY_CHECKS=0');
+
+            // Hapus data kategori
             $this->kategori->delete($idkategori);
+
+            // Aktifkan kembali constraint foreign key
+            $this->db->query('SET FOREIGN_KEY_CHECKS=1');
 
             $msg = [
                 'sukses' => 'Kategori berhasil dihapus'
@@ -78,6 +98,7 @@ class Kategori extends BaseController
             echo json_encode($msg);
         }
     }
+
 
     function formEdit()
     {
@@ -97,12 +118,24 @@ class Kategori extends BaseController
         }
     }
 
+    // Controller
     function updatedata()
     {
         if ($this->request->isAJAX()) {
             $idKategori = $this->request->getVar('idkategori');
             $namaKategori = $this->request->getVar('namakategori');
 
+            // Cek apakah nama kategori sudah ada
+            $existingCategory = $this->kategori->where('katnama', $namaKategori)->first();
+            if ($existingCategory && $existingCategory['katid'] != $idKategori) {
+                $msg = [
+                    'error' => 'Nama kategori sudah ada dalam database.'
+                ];
+                echo json_encode($msg);
+                return;
+            }
+
+            // Jika nama kategori belum ada, lakukan update
             $this->kategori->update($idKategori, [
                 'katnama' => $namaKategori
             ]);

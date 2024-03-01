@@ -79,20 +79,11 @@
                            <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
                              Nama kategori
                            </th>
-                           <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
-                             Date
-                           </th>
-                           <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
-                             Status
-                           </th>
-                           <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
-                             Account
-                           </th>
                            <th class="text-center text-secondary text-xs font-weight-semibold opacity-7"></th>
                          </tr>
                        </thead>
                        <tbody>
-                         <?php $nomor = 1 + (($nohalaman - 1)  * 2);
+                         <?php $nomor = 1 + (($nohalaman - 1)  * 10);
                           foreach ($datakategori as $row) :  ?>
 
 
@@ -109,30 +100,7 @@
                              <td>
                                <p class="text-sm font-weight-normal mb-0"><?= $row['katnama']; ?></p>
                              </td>
-                             <td>
-                               <span class="text-sm font-weight-normal">Wed 3:00pm</span>
-                             </td>
-                             <td>
-                               <span class="badge badge-sm border border-success text-success bg-success">
-                                 <svg width="9" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="me-1">
-                                   <path d="M1 4.42857L3.28571 6.71429L9 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                 </svg>
-                                 Paid
-                               </span>
-                             </td>
-                             <td class="align-middle">
-                               <div class="d-flex">
-                                 <div class="border px-1 py-1 text-center d-flex align-items-center border-radius-sm my-auto">
-                                   <img src="<?= base_url() ?>/Corporate/assets/img/logos/visa.png" class="w-90 mx-auto" alt="visa" />
-                                 </div>
-                                 <div class="ms-2">
-                                   <p class="text-dark text-sm mb-0">Visa 1234</p>
-                                   <p class="text-secondary text-sm mb-0">
-                                     Expiry 06/2026
-                                   </p>
-                                 </div>
-                               </div>
-                             </td>
+
                              <td class="align-middle">
                                <a href="javascript:;" type="button" onclick="hapus('<?= $row['katid'] ?>','<?= $row['katnama'] ?>')" class="text-secondary font-weight-bold text-xs" data-bs-toggle="tooltip" data-bs-title="Edit user">
                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
