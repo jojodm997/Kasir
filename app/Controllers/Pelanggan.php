@@ -59,9 +59,9 @@ class Pelanggan extends BaseController
             $doValid = $this->validate([
                 'pel_nama' => [
                     'label' => 'Nama Pelanggan',
-                    'rules' => 'is_unique[pelanggan.pel_nama]|required',
+                    'rules' => 'required',
                     'errors' => [
-                        'is_unique' => '{field} sudah ada, coba dengan nama yang lain',
+
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
@@ -74,8 +74,9 @@ class Pelanggan extends BaseController
                 ],
                 'pel_telp' => [
                     'label' => 'Nomor Telepon',
-                    'rules' => 'required',
+                    'rules' => 'is_unique[pelanggan.pel_telp]|required',
                     'errors' => [
+                        'is_unique' => '{field} sudah ada, coba dengan nama yang lain',
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
