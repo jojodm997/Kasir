@@ -60,7 +60,7 @@ class Laporan extends BaseController
             'nohalaman' => $noHalaman
         ];
 
-        $html = view('admin/laporan', $data);
+        $html = view('admin/laporanpdf', $data);
         $dompdf->loadHtml($html);
         $dompdf->setPaper('A4', 'landscape');
         $dompdf->render();
