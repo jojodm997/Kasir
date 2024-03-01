@@ -12,8 +12,7 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label for="">Nama Satuan</label>
-                    <input type="text" name="namasatuan" id="namasatuan" class="form-control form-control-sm" required
-                        value="<?= $namasatuan; ?>">
+                    <input type="text" name="namasatuan" id="namasatuan" class="form-control form-control-sm" required value="<?= $namasatuan; ?>">
                 </div>
             </div>
             <div class="modal-footer">
@@ -25,37 +24,46 @@
     </div>
 </div>
 <script>
-$(document).ready(function() {
-    $('.formsimpan').submit(function(e) {
-        e.preventDefault();
-        $.ajax({
-            type: "post",
-            url: $(this).attr('action'),
-            data: $(this).serialize(),
-            dataType: "json",
-            beforeSend: function(e) {
-                $('.tombolSimpan').prop('disabled', true);
-                $('.tombolSimpan').html('<i class="fa fa-spin fa-spinner"></i>')
-            },
-            success: function(response) {
-                if (response.sukses) {
-                    Swal.fire(
-                        'Berhasil',
-                        response.sukses,
-                        'success'
-                    ).then((result) => {
-                        if (result.isConfirmed) {
-                            window.location.reload();
-                        }
-                    });
-
+    $(document).ready(function() {
+        $('.formsimpan').submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: "post",
+                url: $(this).attr('action'),
+                data: $(this).serialize(),
+                dataType: "json",
+                beforeSend: function(e) {
+                    $('.tombolSimpan').prop('disabled', true);
+                    $('.tombolSimpan').html('<i class="fa fa-spin fa-spinner"></i>')
+                },
+                success: function(response) {
+                    if (response.sukses) {
+                        Swal.fire(
+                            'Berhasil',
+                            response.sukses,
+                            'success'
+                        ).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.reload();
+                            }
+                        });
+                    } else if (response.error) {
+                        Swal.fire(
+                            'Gagal',
+                            response.error,
+                            'error'
+                        );
+                    }
+                    $('.tombolSimpan').prop('disabled', false);
+                    $('.tombolSimpan').html('Simpan');
+                },
+                error: function(xhr, thrownError) {
+                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                    $('.tombolSimpan').prop('disabled', false);
+                    $('.tombolSimpan').html('Simpan');
                 }
-            },
-            error: function(xhr, thrownError) {
-                alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-            }
+            });
+            return false;
         });
-        return false;
     });
-});
 </script>

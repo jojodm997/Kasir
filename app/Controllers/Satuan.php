@@ -91,7 +91,14 @@ class Satuan extends BaseController
         if ($this->request->isAJAX()) {
             $idSatuan = $this->request->getVar('idsatuan');
 
+            // Nonaktifkan constraint foreign key sementara
+            $this->db->query('SET FOREIGN_KEY_CHECKS=0');
+
+            // Hapus data satuan
             $this->satuan->delete($idSatuan);
+
+            // Aktifkan kembali constraint foreign key
+            $this->db->query('SET FOREIGN_KEY_CHECKS=1');
 
             $msg = [
                 'sukses' => 'Satuan berhasil dihapus'
@@ -99,6 +106,7 @@ class Satuan extends BaseController
             echo json_encode($msg);
         }
     }
+
 
     function formEdit()
     {
@@ -122,6 +130,16 @@ class Satuan extends BaseController
         if ($this->request->isAJAX()) {
             $idsatuan = $this->request->getVar('idsatuan');
             $namasatuan = $this->request->getVar('namasatuan'); // Mengambil data baru dari form
+
+            // Cek apakah nama satuan yang baru sudah ada di dalam database kecuali untuk ID yang sedang di-update
+            $existingSatuan = $this->satuan->where('satnama', $namasatuan)->where('satid !=', $idsatuan)->countAllResults();
+            if ($existingSatuan > 0) {
+                $msg = [
+                    'error' => 'Nama satuan sudah digunakan oleh satuan lain.'
+                ];
+                echo json_encode($msg);
+                return;
+            }
 
             // Lakukan proses update data ke dalam database
             $this->satuan->update($idsatuan, ['satnama' => $namasatuan]);

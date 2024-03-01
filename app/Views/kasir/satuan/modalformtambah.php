@@ -10,7 +10,8 @@
                 <div class="form-group">
                     <label for="">Nama Satuan</label>
                     <input type="text" name="namasatuan" id="namasatuan" class="form-control form-control-sm" required>
-                    <div class="errorSatuan" style="display: none;"></div>
+                    <div class="errorSatuan" style="display: none;">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary tombolSimpan">Simpan</button>
@@ -35,28 +36,30 @@
                     $('.tombolSimpan').html('<i class="fa fa-spin fa-spinner"></i>')
                 },
                 success: function(response) {
-                    let aksi = $('#aksi').val();
                     if (response.sukses) {
-                        if (aksi == 0) {
-                            Swal.fire(
-                                'Berhasil',
-                                response.sukses,
-                                'success'
-                            ).then((result) => {
-                                if (result.isConfirmed) {
-                                    window.location.reload();
-                                }
-                            });
-                        } else {
-                            $('#modaltambahsatuan').modal('hide');
-                            tampilSatuan();
-                        }
+                        Swal.fire(
+                            'Berhasil',
+                            response.sukses,
+                            'success'
+                        ).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.reload();
+                            }
+                        });
                     } else if (response.error) {
-                        $('.errorSatuan').html(response.error).show();
+                        Swal.fire(
+                            'Gagal',
+                            response.error,
+                            'error'
+                        );
                     }
+                    $('.tombolSimpan').prop('disabled', false);
+                    $('.tombolSimpan').html('Simpan');
                 },
                 error: function(xhr, thrownError) {
                     alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+                    $('.tombolSimpan').prop('disabled', false);
+                    $('.tombolSimpan').html('Simpan');
                 }
             });
             return false;
