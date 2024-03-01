@@ -89,13 +89,13 @@
                                </div>
 
                                <div class="form-group">
-                                   <label for="pel_telp">Nomor Telp</label>
-                                   <div class="col-sm-4">
-                                       <input type="text" class="form-control" id="pel_telp" name="pel_telp" value="<?= $telp; ?>">
-                                       <div class="errorPelTelp" style="display: none;">
-                                       </div>
+                                   <label for="pel_telp">Nomor Telepon</label>
+                                   <div class="col-sm-6">
+                                       <input type="text" class="form-control" id="pel_telp" name="pel_telp" onkeypress="return hanyaAngka(event)">
+                                       <div class="errorPelTelp" style="display: none;"></div>
                                    </div>
                                </div>
+
 
 
                                <div class="form-group">
@@ -195,6 +195,16 @@
                    });
 
                });
+
+               function hanyaAngka(evt) {
+                   var charCode = (evt.which) ? evt.which : event.keyCode;
+                   if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                       $('.errorPelTelp').html("Nomor telepon hanya boleh berisi angka").show();
+                       return false;
+                   }
+                   $('.errorPelTelp').hide();
+                   return true;
+               }
            </script>
 
 

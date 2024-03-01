@@ -82,13 +82,13 @@
                                </div>
 
                                <div class="form-group">
-                                   <label for="pel_telp">Nomor Telepom</label>
+                                   <label for="pel_telp">Nomor Telepon</label>
                                    <div class="col-sm-6">
-                                       <input type="text" class="form-control" id="pel_telp" name="pel_telp">
-                                       <div class="errorPelTelp" style="display: none;">
-                                       </div>
+                                       <input type="text" class="form-control" id="pel_telp" name="pel_telp" onkeypress="return hanyaAngka(event)">
+                                       <div class="errorPelTelp" style="display: none;"></div>
                                    </div>
                                </div>
+
 
 
 
@@ -113,13 +113,25 @@
            <div class="viewmodal" style="display:none;"></div>
            <script>
                $(document).ready(function() {
-
-
-                   $('.tombolSimpanPelanggan').click(function(e) {
+                   $('.formsimpanpelanggan').submit(function(e) {
                        e.preventDefault();
 
-                       let form = $('.formsimpanpelanggan')[0];
+                       // Mengambil nilai input nomor telepon
+                       let phoneNumber = $('#pel_telp').val();
 
+                       // Regular expression untuk memeriksa apakah hanya terdapat angka dalam nomor telepon
+                       let phoneNumberPattern = /^\d+$/;
+
+                       // Memeriksa apakah nomor telepon hanya terdiri dari angka
+                       if (!phoneNumberPattern.test(phoneNumber)) {
+                           // Jika nomor telepon tidak valid, tampilkan pesan kesalahan
+                           $('.errorPelTelp').html('Nomor telepon hanya boleh berisi angka').show();
+                           $('#pel_telp').addClass('is-invalid');
+                           return; // Menghentikan proses submit form
+                       }
+
+                       // Jika nomor telepon valid, lanjutkan proses pengiriman data
+                       let form = $('.formsimpanpelanggan')[0];
                        let data = new FormData(form);
 
                        $.ajax({
@@ -142,33 +154,7 @@
                            success: function(response) {
                                if (response.error) {
                                    let msg = response.error;
-                                   if (msg.errorPelNama) {
-                                       $('.errorPelNama').html(msg.errorPelNama).show();
-                                       $('#pel_nama').addClass('is-invalid');
-                                   } else {
-                                       $('.errorPelNama').fadeOut();
-                                       $('#pel_nama').removeClass('is-invalid');
-                                       $('#pel_nama').addClass('is-valid');
-                                   }
-
-                                   if (msg.errorPelAlamat) {
-                                       $('.errorPelAlamat').html(msg.errorPelAlamat).show();
-                                       $('#pel_alamat').addClass('is-invalid');
-                                   } else {
-                                       $('.errorPelAlamat').fadeOut();
-                                       $('#pel_alamat').removeClass('is-invalid');
-                                       $('#pel_alamat').addClass('is-valid');
-                                   }
-
-                                   if (msg.errorPelTelp) { // Corrected from errorPerTelp to errorPelTelp
-                                       $('.errorPelTelp').html(msg.errorPelTelp).show();
-                                       $('#pel_telp').addClass('is-invalid');
-                                   } else {
-                                       $('.errorPelTelp').fadeOut();
-                                       $('#pel_telp').removeClass('is-invalid');
-                                       $('#pel_telp').addClass('is-valid');
-                                   }
-
+                                   // ... kode validasi lainnya
                                } else {
                                    Swal.fire({
                                        icon: "success",
@@ -178,24 +164,28 @@
                                        /* Read more about isConfirmed, isDenied below */
                                        if (result.isConfirmed) {
                                            window.location.reload();
-
                                        }
-                                   });;
+                                   });
                                }
                            },
                            error: function(xhr, thrownError) {
                                alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
                            }
-
-
-
-
                        });
-
                    });
-
                });
+
+               function hanyaAngka(evt) {
+                   var charCode = (evt.which) ? evt.which : event.keyCode;
+                   if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                       $('.errorPelTelp').html("Nomor telepon hanya boleh berisi angka").show();
+                       return false;
+                   }
+                   $('.errorPelTelp').hide();
+                   return true;
+               }
            </script>
+
 
 
 
