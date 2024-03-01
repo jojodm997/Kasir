@@ -30,7 +30,7 @@ class Pelanggan extends BaseController
 
         $noHalaman = $this->request->getVar('page_produk') ? $this->request->getVar('page_produk') : 1;
         $data = [
-            'datapelanggan' => $dataPelanggan->paginate(5, 'pelanggan'),
+            'datapelanggan' => $dataPelanggan->paginate(10, 'pelanggan'),
             'pager' => $this->pelanggan->pager,
             'nohalaman' => $noHalaman
         ];
@@ -76,7 +76,7 @@ class Pelanggan extends BaseController
                     'label' => 'Nomor Telepon',
                     'rules' => 'is_unique[pelanggan.pel_telp]|required',
                     'errors' => [
-                        'is_unique' => '{field} sudah ada, coba dengan nama yang lain',
+                        'is_unique' => '{field} sudah ada, coba dengan nomor yang lain',
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
@@ -157,9 +157,9 @@ class Pelanggan extends BaseController
             $doValid = $this->validate([
                 'pel_nama' => [
                     'label' => 'Nama Pelanggan',
-                    'rules' => 'is_unique[pelanggan.pel_nama]|required',
+                    'rules' => 'required',
                     'errors' => [
-                        'is_unique' => '{field} sudah ada, coba dengan nama yang lain',
+
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],
@@ -172,8 +172,9 @@ class Pelanggan extends BaseController
                 ],
                 'pel_telp' => [
                     'label' => 'Nomor Telepon',
-                    'rules' => 'required',
+                    'rules' => 'is_unique[pelanggan.pel_telp]|required',
                     'errors' => [
+                        'is_unique' => '{field} sudah ada, coba dengan nomor yang lain',
                         'required' => '{field} tidak boleh kosong'
                     ]
                 ],

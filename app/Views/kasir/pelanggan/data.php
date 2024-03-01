@@ -94,7 +94,7 @@
                                            </tr>
                                        </thead>
                                        <tbody>
-                                           <?php $nomor = 1 + (($nohalaman - 1)  * 5);
+                                           <?php $nomor = 1 + (($nohalaman - 1)  * 10);
                                             foreach ($datapelanggan as $row) :  ?>
 
 
