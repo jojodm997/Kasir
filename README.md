@@ -66,7 +66,8 @@ ex. FauzanDM
 ex. [@Fauzan3E5](https://twitter.com/Fauzan3E5)
 
 ## Version History
-
+- 1.0.0
+  - Lastest Greatest
 - 0.3.1
   - Added Create and Delete for Kategori
 - 0.3
