@@ -63,7 +63,6 @@ c:\xampp\php\php spark serve
 ## Authors
 
 ex. FauzanDM  
-ex. [@Fauzan3E5](https://twitter.com/Fauzan3E5)
 
 ## Version History
 - 1.0.0
