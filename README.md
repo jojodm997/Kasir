@@ -1,9 +1,8 @@
 # Cashier Application for Final Project (UKK)
 
-This Cashier application built with CodeIgniter 4 is a project designed for the Final Project (UKK). The actors in this application consist of three roles:
+This Cashier application built with CodeIgniter 4 is a project designed for the Final Project (UKK). The actors in this application consist of two roles:
 
-    Cashier
-    Admin
+>Cashier and Admin
 
 ## Description
 
@@ -48,11 +47,10 @@ Requirements
   email = dojesmanja@gmail.com
   password = butuhduit
 
-### WARNING
-
-- If you use windows 10 or windows 11 you need to configure the php program
-- Go to your project directory
-- type this command
+> [!WARNING]
+> If you use windows 10 or windows 11 you need to configure the php program
+> Go to your project directory
+> type this command
 
 ```
 c:\xampp\php\php spark serve
