@@ -21,9 +21,11 @@ Requirements
 
 - You can either download the zip file or clone the repository (requires Git installed on your PC) by following these steps:
 - Open the terminal or command line. Run the following command:
-- git clone https://github.com/jojodm997/Kasir
-- This will download the 'Kasir' folder.
-- Create a database named 'kasir'.
+  ```
+  git clone https://github.com/jojodm997/Kasir
+  ```
+- This will download the `Kasir` folder.
+- Create a database named `kasir`.
 - Import the database file using phpMyAdmin or any other MySQL client tool.
 - Update the database settings in the env file.
 - Rename the env file to .env (starting with a dot).
@@ -31,9 +33,12 @@ Requirements
 ### Running the program
 
 - Open VSCode.
-- Navigate to the 'Kasir' folder.
-- In the terminal, go to the 'Downloads/Kasir' directory and type php spark serve (press Enter).
-- Open a web browser and go to http://localhost:8080 (or the port specified in the terminal).
+- Navigate to the `kasir` folder.
+- In the terminal, go to the `Downloads/Kasir` directory and type
+  ```
+  php spark serve
+  ```
+- Open a web browser and go to `http://localhost:8080` (or the port specified in the terminal).
 
 ### Default crendentials
 
