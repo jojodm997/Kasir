@@ -24,7 +24,7 @@ Requirements
   ```
   git clone https://github.com/jojodm997/Kasir
   ```
-- This will download the `Kasir` folder.
+- This will download the `Kasir` directory.
 - Create a database named `kasir`.
 - Import the database file using phpMyAdmin or any other MySQL client tool.
 - Update the database settings in the env file.
@@ -33,7 +33,7 @@ Requirements
 ### Running the program
 
 - Open VSCode.
-- Navigate to the `kasir` folder.
+- Navigate to the `kasir` directory.
 - In the terminal, go to the `Downloads/Kasir` directory and type
   ```
   php spark serve
